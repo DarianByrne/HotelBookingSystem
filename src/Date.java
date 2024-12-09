@@ -1,27 +1,27 @@
 /**
- * 
+ *
  */
 public class Date {
 
-    /**
-     * Default constructor
-     */
-    public Date() {
-    }
+	/**
+	 * Default constructor
+	 */
+	public Date() {
+	}
 
-    /**
-     * 
-     */
-    private String day;
+	/**
+	 *
+	 */
+	private int day;
 
-    /**
-     * 
-     */
-    private String month;
+	/**
+	 *
+	 */
+	private int month;
 
-    /**
-     * 
-     */
-    private int year;
+	/**
+	 *
+	 */
+	private int year;
 
 }

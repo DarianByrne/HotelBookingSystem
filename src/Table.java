@@ -1,17 +1,17 @@
 /**
- * 
+ *
  */
 public class Table {
 
-    /**
-     * Default constructor
-     */
-    public Table() {
-    }
+	/**
+	 * Default constructor
+	 */
+	public Table() {
+	}
 
-    /**
-     * 
-     */
-    private int numberOfSeats;
+	/**
+	 *
+	 */
+	private int numberOfSeats;
 
 }

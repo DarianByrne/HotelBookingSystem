@@ -1,22 +1,22 @@
 /**
- * 
+ *
  */
 public class RestaurantReservation extends Booking {
 
-    /**
-     * Default constructor
-     */
-    public RestaurantReservation() {
-    }
+	/**
+	 * Default constructor
+	 */
+	public RestaurantReservation() {
+	}
 
-    /**
-     * 
-     */
-    private Table table;
+	/**
+	 *
+	 */
+	private Table table;
 
-    /**
-     * 
-     */
-    private int numberOfPeople;
+	/**
+	 *
+	 */
+	private int numberOfPeople;
 
 }

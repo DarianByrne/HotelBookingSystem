@@ -3,35 +3,35 @@
  */
 public class Booking {
 
-    /**
-     * Default constructor
-     */
-    public Booking() {
-    }
+	/**
+	 * Default constructor
+	 */
+	public Booking() {
+	}
 
-    /**
-     *
-     */
-    private int bookingID;
+	/**
+	 *
+	 */
+	private int bookingID;
 
-    /**
-     *
-     */
-    private Customer customer;
+	/**
+	 *
+	 */
+	private Customer customer;
 
-    /**
-     *
-     */
-    private Date date;
+	/**
+	 *
+	 */
+	private Date date;
 
-    /**
-     *
-     */
-    private Time time;
+	/**
+	 *
+	 */
+	private Time time;
 
-    /**
-     *
-     */
-    private Payment payment;
+	/**
+	 *
+	 */
+	private Payment payment;
 
 }

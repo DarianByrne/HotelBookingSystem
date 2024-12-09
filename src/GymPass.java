@@ -1,17 +1,17 @@
 /**
- * 
+ *
  */
 public class GymPass {
 
-    /**
-     * Default constructor
-     */
-    public GymPass() {
-    }
+	/**
+	 * Default constructor
+	 */
+	public GymPass() {
+	}
 
-    /**
-     * 
-     */
-    private float rate;
+	/**
+	 *
+	 */
+	private float rate;
 
 }

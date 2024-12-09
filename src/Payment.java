@@ -1,22 +1,22 @@
 /**
- * 
+ *
  */
 public class Payment {
 
-    /**
-     * Default constructor
-     */
-    public Payment() {
-    }
+	/**
+	 * Default constructor
+	 */
+	public Payment() {
+	}
 
-    /**
-     * 
-     */
-    private String paymentDetails;
+	/**
+	 *
+	 */
+	private String paymentDetails;
 
-    /**
-     * 
-     */
-    private float paymentAmount;
+	/**
+	 *
+	 */
+	private float paymentAmount;
 
 }

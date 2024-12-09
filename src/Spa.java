@@ -1,22 +1,22 @@
 /**
- * 
+ *
  */
 public class Spa {
 
-    /**
-     * Default constructor
-     */
-    public Spa() {
-    }
+	/**
+	 * Default constructor
+	 */
+	public Spa() {
+	}
 
-    /**
-     * 
-     */
-    private SpaService spaService;
+	/**
+	 *
+	 */
+	private SpaService spaService;
 
-    /**
-     * 
-     */
-    private int capacity;
+	/**
+	 *
+	 */
+	private int capacity;
 
 }

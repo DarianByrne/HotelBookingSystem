@@ -1,17 +1,17 @@
 /**
- * 
+ *
  */
 public class Menu {
 
-    /**
-     * Default constructor
-     */
-    public Menu() {
-    }
+	/**
+	 * Default constructor
+	 */
+	public Menu() {
+	}
 
-    /**
-     * 
-     */
-    private menuItem menuItems;
+	/**
+	 *
+	 */
+	private MenuItem[] menuItems;
 
 }

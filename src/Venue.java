@@ -1,22 +1,22 @@
 /**
- * 
+ *
  */
 public class Venue {
 
-    /**
-     * Default constructor
-     */
-    public Venue() {
-    }
+	/**
+	 * Default constructor
+	 */
+	public Venue() {
+	}
 
-    /**
-     * 
-     */
-    private String name;
+	/**
+	 *
+	 */
+	private String name;
 
-    /**
-     * 
-     */
-    private int capacity;
+	/**
+	 *
+	 */
+	private int capacity;
 
 }

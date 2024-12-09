@@ -1,27 +1,27 @@
 /**
- * 
+ *
  */
 public class SpaBooking extends Booking {
 
-    /**
-     * Default constructor
-     */
-    public SpaBooking() {
-    }
+	/**
+	 * Default constructor
+	 */
+	public SpaBooking() {
+	}
 
-    /**
-     * 
-     */
-    private SpaService spaService;
+	/**
+	 *
+	 */
+	private SpaService spaService;
 
-    /**
-     * 
-     */
-    private float duration;
+	/**
+	 *
+	 */
+	private float duration;
 
-    /**
-     * 
-     */
-    private float rate;
+	/**
+	 *
+	 */
+	private float rate;
 
 }

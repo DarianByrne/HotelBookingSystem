@@ -1,27 +1,27 @@
 /**
- * 
+ *
  */
 public class GymBooking extends Booking {
 
-    /**
-     * Default constructor
-     */
-    public GymBooking() {
-    }
+	/**
+	 * Default constructor
+	 */
+	public GymBooking() {
+	}
 
-    /**
-     * 
-     */
-    private GymSession gymSession;
+	/**
+	 *
+	 */
+	private GymSession gymSession;
 
-    /**
-     * 
-     */
-    private float duration;
+	/**
+	 *
+	 */
+	private float duration;
 
-    /**
-     * 
-     */
-    private float rate;
+	/**
+	 *
+	 */
+	private float rate;
 
 }

@@ -1,52 +1,52 @@
 /**
- * 
+ *
  */
 public class Schedule {
 
-    /**
-     * Default constructor
-     */
-    public Schedule() {
-    }
+	/**
+	 * Default constructor
+	 */
+	public Schedule() {
+	}
 
-    /**
-     * 
-     */
-    private Date date;
+	/**
+	 *
+	 */
+	private Date date;
 
-    /**
-     * 
-     */
-    private Time time;
+	/**
+	 *
+	 */
+	private Time time;
 
-    /**
-     * 
-     */
-    private Booking roomBookings;
+	/**
+	 *
+	 */
+	private Booking[] roomBookings;
 
-    /**
-     * 
-     */
-    private Booking weddingBookings;
+	/**
+	 *
+	 */
+	private Booking[] weddingBookings;
 
-    /**
-     * 
-     */
-    private Booking gymBookings;
+	/**
+	 *
+	 */
+	private Booking[] gymBookings;
 
-    /**
-     * 
-     */
-    private Booking spaBookings;
+	/**
+	 *
+	 */
+	private Booking[] spaBookings;
 
-    /**
-     * 
-     */
-    private Booking restaurantReservations;
+	/**
+	 *
+	 */
+	private Booking[] restaurantReservations;
 
-    /**
-     * 
-     */
-    private Booking conferenceBookings;
+	/**
+	 *
+	 */
+	private Booking[] conferenceBookings;
 
 }

@@ -1,27 +1,27 @@
 /**
- * 
+ *
  */
 public class Receipt {
 
-    /**
-     * Default constructor
-     */
-    public Receipt() {
-    }
+	/**
+	 * Default constructor
+	 */
+	public Receipt() {
+	}
 
-    /**
-     * 
-     */
-    private Date date;
+	/**
+	 *
+	 */
+	private Date date;
 
-    /**
-     * 
-     */
-    private Time time;
+	/**
+	 *
+	 */
+	private Time time;
 
-    /**
-     * 
-     */
-    private float paymentAmount;
+	/**
+	 *
+	 */
+	private float paymentAmount;
 
 }

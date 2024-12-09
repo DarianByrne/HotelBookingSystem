@@ -1,27 +1,27 @@
 /**
- * 
+ *
  */
 public class Gym {
 
-    /**
-     * Default constructor
-     */
-    public Gym() {
-    }
+	/**
+	 * Default constructor
+	 */
+	public Gym() {
+	}
 
-    /**
-     * 
-     */
-    private GymSession gymSession;
+	/**
+	 *
+	 */
+	private GymSession[] gymSessions;
 
-    /**
-     * 
-     */
-    private int capacity;
+	/**
+	 *
+	 */
+	private int capacity;
 
-    /**
-     * 
-     */
-    private boolean isAvailable;
+	/**
+	 *
+	 */
+	private boolean isAvailable;
 
 }

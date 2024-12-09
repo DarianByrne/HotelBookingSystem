@@ -1,22 +1,22 @@
 /**
- * 
+ *
  */
 public class GymSession {
 
-    /**
-     * Default constructor
-     */
-    public GymSession() {
-    }
+	/**
+	 * Default constructor
+	 */
+	public GymSession() {
+	}
 
-    /**
-     * 
-     */
-    private String name;
+	/**
+	 *
+	 */
+	private String name;
 
-    /**
-     * 
-     */
-    private float rate;
+	/**
+	 *
+	 */
+	private float rate;
 
 }

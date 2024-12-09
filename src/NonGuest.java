@@ -1,12 +1,12 @@
 /**
- * 
+ *
  */
-public class Non-Guest extends Customer {
+public class NonGuest extends Customer {
 
-    /**
-     * Default constructor
-     */
-    public Non-Guest() {
-    }
+	/**
+	 * Default constructor
+	 */
+	public NonGuest() {
+	}
 
 }

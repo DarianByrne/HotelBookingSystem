@@ -1,32 +1,32 @@
 /**
- * 
+ *
  */
 public class ConferenceBooking extends Booking {
 
-    /**
-     * Default constructor
-     */
-    public ConferenceBooking() {
-    }
+	/**
+	 * Default constructor
+	 */
+	public ConferenceBooking() {
+	}
 
-    /**
-     * 
-     */
-    private Venue venue;
+	/**
+	 *
+	 */
+	private Venue venue;
 
-    /**
-     * 
-     */
-    private int numberOfPeople;
+	/**
+	 *
+	 */
+	private int numberOfPeople;
 
-    /**
-     * 
-     */
-    private String eventType;
+	/**
+	 *
+	 */
+	private String eventType;
 
-    /**
-     * 
-     */
-    private float rate;
+	/**
+	 *
+	 */
+	private float rate;
 
 }

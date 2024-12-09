@@ -1,27 +1,27 @@
 /**
- * 
+ *
  */
 public class RoomBooking extends Booking {
 
-    /**
-     * Default constructor
-     */
-    public RoomBooking() {
-    }
+	/**
+	 * Default constructor
+	 */
+	public RoomBooking() {
+	}
 
-    /**
-     * 
-     */
-    private Room room;
+	/**
+	 *
+	 */
+	private Room room;
 
-    /**
-     * 
-     */
-    private int duration;
+	/**
+	 *
+	 */
+	private int duration;
 
-    /**
-     * 
-     */
-    private float rate;
+	/**
+	 *
+	 */
+	private float rate;
 
 }

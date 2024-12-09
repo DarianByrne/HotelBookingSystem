@@ -1,42 +1,42 @@
 /**
- * 
+ *
  */
 public class Hotel {
 
-    /**
-     * Default constructor
-     */
-    public Hotel() {
-    }
+	/**
+	 * Default constructor
+	 */
+	public Hotel() {
+	}
 
-    /**
-     * 
-     */
-    private String name;
+	/**
+	 *
+	 */
+	private String name;
 
-    /**
-     * 
-     */
-    private String address;
+	/**
+	 *
+	 */
+	private String address;
 
-    /**
-     * 
-     */
-    private int phoneNumber;
+	/**
+	 *
+	 */
+	private int phoneNumber;
 
-    /**
-     * 
-     */
-    private Room rooms;
+	/**
+	 *
+	 */
+	private Room[] rooms;
 
-    /**
-     * 
-     */
-    private Venue venues;
+	/**
+	 *
+	 */
+	private Venue[] venues;
 
-    /**
-     * 
-     */
-    private Schedule schedules;
+	/**
+	 *
+	 */
+	private Schedule[] schedules;
 
 }
