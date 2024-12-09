@@ -1,0 +1,1183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   width="732"
+   height="612"
+   id="svg103"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="g103">
+    <g
+       id="g1">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 10 10 L 722 10 L 722 602 L 10 602 L 10 10"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path1" />
+    </g>
+    <g
+       id="g2">
+      <path
+         fill="#ffffff"
+         stroke="none"
+         paint-order="stroke fill markers"
+         d=" M 10 10 L 10 33 L 140.181640625 33 L 151.681640625 21.5 L 151.681640625 10 L 10 10"
+         id="path2" />
+    </g>
+    <g
+       id="g3">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 10 10 L 10 33 L 140.181640625 33 L 151.681640625 21.5 L 151.681640625 10 L 10 10 L 10 10"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path3" />
+    </g>
+    <g
+       id="g5">
+      <g
+         id="g4">
+        <path
+           fill="none"
+           stroke="none"
+           id="path4" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="undefined"
+           x="82.955810546875"
+           y="19.5"
+           text-anchor="middle"
+           dominant-baseline="central"
+           transform="matrix(1 0 0 1 2 2)"
+           id="text4">Book Conference</text>
+      </g>
+    </g>
+    <g
+       id="g7">
+      <g
+         id="g6">
+        <path
+           fill="none"
+           stroke="none"
+           id="path5" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="undefined"
+           x="19.864990234375"
+           y="19.5"
+           text-anchor="middle"
+           dominant-baseline="central"
+           transform="matrix(1 0 0 1 2 2)"
+           id="text5">sd</text>
+      </g>
+    </g>
+    <g
+       id="g8">
+      <rect
+         fill="#C0C0C0"
+         stroke="none"
+         x="23"
+         y="47"
+         width="161.57177734375"
+         height="40"
+         transform="matrix(1 0 0 1 2 2)"
+         fill-opacity="0.2"
+         id="rect7" />
+    </g>
+    <g
+       id="g9">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="16"
+         y="40"
+         width="161.57177734375"
+         height="40"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect8" />
+    </g>
+    <g
+       id="g10">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 18 42 L 179.57177734375 42 L 179.57177734375 82 L 18 82 L 18 42 Z Z"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path9" />
+    </g>
+    <g
+       id="g12">
+      <g
+         id="g11">
+        <path
+           fill="none"
+           stroke="none"
+           id="path10" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="undefined"
+           x="97.285888671875"
+           y="53.5"
+           text-anchor="middle"
+           dominant-baseline="central"
+           transform="matrix(1 0 0 1 2 2)"
+           id="text10">customer: Customer</text>
+      </g>
+    </g>
+    <g
+       id="g13">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 99.5 83 L 99.5 402"
+         stroke-miterlimit="10"
+         stroke-dasharray="3"
+         id="path12" />
+    </g>
+    <g
+       id="g14">
+      <rect
+         fill="#C0C0C0"
+         stroke="none"
+         x="223"
+         y="47"
+         width="110.27001953125"
+         height="40"
+         transform="matrix(1 0 0 1 2 2)"
+         fill-opacity="0.2"
+         id="rect13" />
+    </g>
+    <g
+       id="g15">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="216"
+         y="40"
+         width="110.27001953125"
+         height="40"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect14" />
+    </g>
+    <g
+       id="g16">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 218 42 L 328.27001953125 42 L 328.27001953125 82 L 218 82 L 218 42 Z Z"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path15" />
+    </g>
+    <g
+       id="g18">
+      <g
+         id="g17">
+        <path
+           fill="none"
+           stroke="none"
+           id="path16" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="undefined"
+           x="271.635009765625"
+           y="53.5"
+           text-anchor="middle"
+           dominant-baseline="central"
+           transform="matrix(1 0 0 1 2 2)"
+           id="text16">hotelDB: Hotel</text>
+      </g>
+    </g>
+    <g
+       id="g19">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 273.5 83 L 273.5 402"
+         stroke-miterlimit="10"
+         stroke-dasharray="3"
+         id="path18" />
+    </g>
+    <g
+       id="g20">
+      <rect
+         fill="#C0C0C0"
+         stroke="none"
+         x="399"
+         y="115"
+         width="202"
+         height="40"
+         transform="matrix(1 0 0 1 2 2)"
+         fill-opacity="0.2"
+         id="rect19" />
+    </g>
+    <g
+       id="g21">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="392"
+         y="108"
+         width="202"
+         height="40"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect20" />
+    </g>
+    <g
+       id="g22">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 394 110 L 596 110 L 596 150 L 394 150 L 394 110 Z Z"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path21" />
+    </g>
+    <g
+       id="g24">
+      <g
+         id="g23">
+        <path
+           fill="none"
+           stroke="none"
+           id="path22" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="undefined"
+           x="493.5"
+           y="121.5"
+           text-anchor="middle"
+           dominant-baseline="central"
+           transform="matrix(1 0 0 1 2 2)"
+           id="text22">booking: ConferenceBooking</text>
+      </g>
+    </g>
+    <g
+       id="g25">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 495.5 151 L 495.5 402"
+         stroke-miterlimit="10"
+         stroke-dasharray="3"
+         id="path24" />
+    </g>
+    <g
+       id="g26">
+      <rect
+         fill="#C0C0C0"
+         stroke="none"
+         x="583"
+         y="47"
+         width="111.0380859375"
+         height="40"
+         transform="matrix(1 0 0 1 2 2)"
+         fill-opacity="0.2"
+         id="rect25" />
+    </g>
+    <g
+       id="g27">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="576"
+         y="40"
+         width="111.0380859375"
+         height="40"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect26" />
+    </g>
+    <g
+       id="g28">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 578 42 L 689.0380859375 42 L 689.0380859375 82 L 578 82 L 578 42 Z Z"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path27" />
+    </g>
+    <g
+       id="g30">
+      <g
+         id="g29">
+        <path
+           fill="none"
+           stroke="none"
+           id="path28" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="undefined"
+           x="632.01904296875"
+           y="53.5"
+           text-anchor="middle"
+           dominant-baseline="central"
+           transform="matrix(1 0 0 1 2 2)"
+           id="text28">venues: Venue</text>
+      </g>
+    </g>
+    <g
+       id="g31">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 634.5 83 L 634.5 356"
+         stroke-miterlimit="10"
+         stroke-dasharray="3"
+         id="path30" />
+    </g>
+    <g
+       id="g32">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 100 114 L 266 114"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path31" />
+    </g>
+    <g
+       id="g33">
+      <path
+         fill="#000000"
+         stroke="none"
+         paint-order="stroke fill markers"
+         d=" M 255.83732514237585 118.20951775601598 L 266 114 L 255.83732514237585 109.79048224398402"
+         id="path32" />
+    </g>
+    <g
+       id="g34">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 255.83732514237585 118.20951775601598 L 266 114 L 255.83732514237585 109.79048224398402 L 255.83732514237585 118.20951775601598"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path33" />
+    </g>
+    <g
+       id="g35">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="102"
+         y="96"
+         width="158.259765625"
+         height="13"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect34" />
+    </g>
+    <g
+       id="g37">
+      <g
+         id="g36">
+        <path
+           fill="none"
+           stroke="none"
+           id="path35" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="undefined"
+           x="181.1298828125"
+           y="102.5"
+           text-anchor="middle"
+           dominant-baseline="central"
+           transform="matrix(1 0 0 1 2 2)"
+           id="text35">1 : selectBookConference</text>
+      </g>
+    </g>
+    <g
+       id="g38">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="264"
+         y="112"
+         width="14"
+         height="28"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect37" />
+    </g>
+    <g
+       id="g39">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 266 114 L 280 114 L 280 142 L 266 142 L 266 114 Z Z"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path38" />
+    </g>
+    <g
+       id="g40">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 280 130 L 394 130"
+         stroke-miterlimit="10"
+         stroke-dasharray="3"
+         id="path39" />
+    </g>
+    <g
+       id="g41">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 383.83732514237585 134.209517756016 L 394 130 L 383.83732514237585 125.79048224398402"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path40" />
+    </g>
+    <g
+       id="g42">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="285"
+         y="112"
+         width="101.17529296875"
+         height="13"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect41" />
+    </g>
+    <g
+       id="g44">
+      <g
+         id="g43">
+        <path
+           fill="none"
+           stroke="none"
+           id="path42" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="undefined"
+           x="335.587646484375"
+           y="118.5"
+           text-anchor="middle"
+           dominant-baseline="central"
+           transform="matrix(1 0 0 1 2 2)"
+           id="text42">2 : createBooking</text>
+      </g>
+    </g>
+    <g
+       id="g45">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="310"
+         y="97"
+         width="50.5908203125"
+         height="13"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect44" />
+    </g>
+    <g
+       id="g47">
+      <g
+         id="g46">
+        <path
+           fill="none"
+           stroke="none"
+           id="path45" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="undefined"
+           x="335.29541015625"
+           y="103.5"
+           text-anchor="middle"
+           dominant-baseline="central"
+           transform="matrix(1 0 0 1 2 2)"
+           id="text45">«create»</text>
+      </g>
+    </g>
+    <g
+       id="g48">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 495 162 L 106 162"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path47" />
+    </g>
+    <g
+       id="g49">
+      <path
+         fill="#000000"
+         stroke="none"
+         paint-order="stroke fill markers"
+         d=" M 116.16267485762415 157.790482243984 L 106 162 L 116.16267485762415 166.209517756016"
+         id="path48" />
+    </g>
+    <g
+       id="g50">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 116.16267485762415 157.790482243984 L 106 162 L 116.16267485762415 166.209517756016 L 116.16267485762415 157.790482243984"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path49" />
+    </g>
+    <g
+       id="g51">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="238"
+         y="164"
+         width="119.95166015625"
+         height="13"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect50" />
+    </g>
+    <g
+       id="g53">
+      <g
+         id="g52">
+        <path
+           fill="none"
+           stroke="none"
+           id="path51" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="undefined"
+           x="297.975830078125"
+           y="170.5"
+           text-anchor="middle"
+           dominant-baseline="central"
+           transform="matrix(1 0 0 1 2 2)"
+           id="text51">3 : promptEventType</text>
+      </g>
+    </g>
+    <g
+       id="g54">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="90"
+         y="160"
+         width="14"
+         height="56"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect53" />
+    </g>
+    <g
+       id="g55">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 92 162 L 106 162 L 106 218 L 92 218 L 92 162 Z Z"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path54" />
+    </g>
+    <g
+       id="g56">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 106 210 L 488 210"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path55" />
+    </g>
+    <g
+       id="g57">
+      <path
+         fill="#000000"
+         stroke="none"
+         paint-order="stroke fill markers"
+         d=" M 477.83732514237585 214.209517756016 L 488 210 L 477.83732514237585 205.790482243984"
+         id="path56" />
+    </g>
+    <g
+       id="g58">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 477.83732514237585 214.209517756016 L 488 210 L 477.83732514237585 205.790482243984 L 477.83732514237585 214.209517756016"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path57" />
+    </g>
+    <g
+       id="g59">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="241"
+         y="192"
+         width="109.12255859375"
+         height="13"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect58" />
+    </g>
+    <g
+       id="g61">
+      <g
+         id="g60">
+        <path
+           fill="none"
+           stroke="none"
+           id="path59" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="undefined"
+           x="295.561279296875"
+           y="198.5"
+           text-anchor="middle"
+           dominant-baseline="central"
+           transform="matrix(1 0 0 1 2 2)"
+           id="text59">4 : enterEventType</text>
+      </g>
+    </g>
+    <g
+       id="g62">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="486"
+         y="208"
+         width="14"
+         height="28"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect61" />
+    </g>
+    <g
+       id="g63">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 488 210 L 502 210 L 502 238 L 488 238 L 488 210 Z Z"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path62" />
+    </g>
+    <g
+       id="g64">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 495 250 L 106 250"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path63" />
+    </g>
+    <g
+       id="g65">
+      <path
+         fill="#000000"
+         stroke="none"
+         paint-order="stroke fill markers"
+         d=" M 116.16267485762415 245.790482243984 L 106 250 L 116.16267485762415 254.209517756016"
+         id="path64" />
+    </g>
+    <g
+       id="g66">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 116.16267485762415 245.790482243984 L 106 250 L 116.16267485762415 254.209517756016 L 116.16267485762415 245.790482243984"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path65" />
+    </g>
+    <g
+       id="g67">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="209"
+         y="252"
+         width="177.02978515625"
+         height="13"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect66" />
+    </g>
+    <g
+       id="g69">
+      <g
+         id="g68">
+        <path
+           fill="none"
+           stroke="none"
+           id="path67" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="undefined"
+           x="297.514892578125"
+           y="258.5"
+           text-anchor="middle"
+           dominant-baseline="central"
+           transform="matrix(1 0 0 1 2 2)"
+           id="text67">5 : promptNumberOfAttendees</text>
+      </g>
+    </g>
+    <g
+       id="g70">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="90"
+         y="248"
+         width="14"
+         height="56"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect69" />
+    </g>
+    <g
+       id="g71">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 92 250 L 106 250 L 106 306 L 92 306 L 92 250 Z Z"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path70" />
+    </g>
+    <g
+       id="g72">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 106 298 L 488 298"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path71" />
+    </g>
+    <g
+       id="g73">
+      <path
+         fill="#000000"
+         stroke="none"
+         paint-order="stroke fill markers"
+         d=" M 477.83732514237585 302.209517756016 L 488 298 L 477.83732514237585 293.790482243984"
+         id="path72" />
+    </g>
+    <g
+       id="g74">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 477.83732514237585 302.209517756016 L 488 298 L 477.83732514237585 293.790482243984 L 477.83732514237585 302.209517756016"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path73" />
+    </g>
+    <g
+       id="g75">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="212"
+         y="280"
+         width="166.20068359375"
+         height="13"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect74" />
+    </g>
+    <g
+       id="g77">
+      <g
+         id="g76">
+        <path
+           fill="none"
+           stroke="none"
+           id="path75" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="undefined"
+           x="295.100341796875"
+           y="286.5"
+           text-anchor="middle"
+           dominant-baseline="central"
+           transform="matrix(1 0 0 1 2 2)"
+           id="text75">6 : enterNumberOfAttendees</text>
+      </g>
+    </g>
+    <g
+       id="g78">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="486"
+         y="296"
+         width="14"
+         height="28"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect77" />
+    </g>
+    <g
+       id="g79">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 488 298 L 502 298 L 502 326 L 488 326 L 488 298 Z Z"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path78" />
+    </g>
+    <g
+       id="g80">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 502 314 L 627 314"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path79" />
+    </g>
+    <g
+       id="g81">
+      <path
+         fill="#000000"
+         stroke="none"
+         paint-order="stroke fill markers"
+         d=" M 616.8373251423759 318.209517756016 L 627 314 L 616.8373251423758 309.790482243984"
+         id="path80" />
+    </g>
+    <g
+       id="g82">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 616.8373251423759 318.209517756016 L 627 314 L 616.8373251423758 309.790482243984 L 616.8373251423759 318.209517756016"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path81" />
+    </g>
+    <g
+       id="g83">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="523"
+         y="296"
+         width="79.5107421875"
+         height="13"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect82" />
+    </g>
+    <g
+       id="g85">
+      <g
+         id="g84">
+        <path
+           fill="none"
+           stroke="none"
+           id="path83" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="undefined"
+           x="562.75537109375"
+           y="302.5"
+           text-anchor="middle"
+           dominant-baseline="central"
+           transform="matrix(1 0 0 1 2 2)"
+           id="text83">7 : getVenues</text>
+      </g>
+    </g>
+    <g
+       id="g86">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="625"
+         y="312"
+         width="14"
+         height="28"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect85" />
+    </g>
+    <g
+       id="g87">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 627 314 L 641 314 L 641 342 L 627 342 L 627 314 Z Z"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path86" />
+    </g>
+    <g
+       id="g88">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 496 330 L 526 330 L 526 350 L 502 350"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path87" />
+    </g>
+    <g
+       id="g89">
+      <path
+         fill="#000000"
+         stroke="none"
+         paint-order="stroke fill markers"
+         d=" M 512.1626748576241 345.790482243984 L 502 350 L 512.1626748576241 354.209517756016"
+         id="path88" />
+    </g>
+    <g
+       id="g90">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 512.1626748576241 345.790482243984 L 502 350 L 512.1626748576241 354.209517756016 L 512.1626748576241 345.790482243984"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path89" />
+    </g>
+    <g
+       id="g91">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="487"
+         y="331"
+         width="92.51708984375"
+         height="13"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect90" />
+    </g>
+    <g
+       id="g93">
+      <g
+         id="g92">
+        <path
+           fill="none"
+           stroke="none"
+           id="path91" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="undefined"
+           x="533.258544921875"
+           y="337.5"
+           text-anchor="middle"
+           dominant-baseline="central"
+           transform="matrix(1 0 0 1 2 2)"
+           id="text91">8 : assignVenue</text>
+      </g>
+    </g>
+    <g
+       id="g94">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="486"
+         y="348"
+         width="14"
+         height="28"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect93" />
+    </g>
+    <g
+       id="g95">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 488 350 L 502 350 L 502 378 L 488 378 L 488 350 Z Z"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path94" />
+    </g>
+    <g
+       id="g96">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="96"
+         y="400"
+         width="400"
+         height="64"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect95" />
+    </g>
+    <g
+       id="g97">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 98 402 L 498 402 L 498 466 L 98 466 L 98 402 Z Z"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path96" />
+    </g>
+    <g
+       id="g98">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 98 402 L 98 425 L 123.1708984375 425 L 134.6708984375 413.5 L 134.6708984375 402 L 98 402 L 98 402"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path97" />
+    </g>
+    <g
+       id="g100">
+      <g
+         id="g99">
+        <path
+           fill="none"
+           stroke="none"
+           id="path98" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="undefined"
+           x="314.33544921875"
+           y="411.5"
+           text-anchor="middle"
+           dominant-baseline="central"
+           transform="matrix(1 0 0 1 2 2)"
+           id="text98">Booking &amp; Payment</text>
+      </g>
+    </g>
+    <g
+       id="g102">
+      <g
+         id="g101">
+        <path
+           fill="none"
+           stroke="none"
+           id="path100" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="undefined"
+           x="108.58544921875"
+           y="411.5"
+           text-anchor="middle"
+           dominant-baseline="central"
+           transform="matrix(1 0 0 1 2 2)"
+           id="text100">ref</text>
+      </g>
+    </g>
+  </g>
+</svg>

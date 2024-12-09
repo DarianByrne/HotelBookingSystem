@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   width="712"
+   height="612"
+   id="svg71"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="g71">
+    <g
+       id="g1">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 10 10 L 702 10 L 702 602 L 10 602 L 10 10"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path1" />
+    </g>
+    <g
+       id="g2">
+      <path
+         fill="#ffffff"
+         stroke="none"
+         paint-order="stroke fill markers"
+         d=" M 10 10 L 10 33 L 127.16259765625 33 L 138.66259765625 21.5 L 138.66259765625 10 L 10 10"
+         id="path2" />
+    </g>
+    <g
+       id="g3">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 10 10 L 10 33 L 127.16259765625 33 L 138.66259765625 21.5 L 138.66259765625 10 L 10 10 L 10 10"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path3" />
+    </g>
+    <g
+       id="g5">
+      <g
+         id="g4">
+        <path
+           fill="none"
+           stroke="none"
+           id="path4" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="undefined"
+           x="76.4462890625"
+           y="19.5"
+           text-anchor="middle"
+           dominant-baseline="central"
+           transform="matrix(1 0 0 1 2 2)"
+           id="text4">Purchase Pass</text>
+      </g>
+    </g>
+    <g
+       id="g7">
+      <g
+         id="g6">
+        <path
+           fill="none"
+           stroke="none"
+           id="path5" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="undefined"
+           x="19.864990234375"
+           y="19.5"
+           text-anchor="middle"
+           dominant-baseline="central"
+           transform="matrix(1 0 0 1 2 2)"
+           id="text5">sd</text>
+      </g>
+    </g>
+    <g
+       id="g8">
+      <rect
+         fill="#C0C0C0"
+         stroke="none"
+         x="23"
+         y="47"
+         width="135.5654296875"
+         height="40"
+         transform="matrix(1 0 0 1 2 2)"
+         fill-opacity="0.2"
+         id="rect7" />
+    </g>
+    <g
+       id="g9">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="16"
+         y="40"
+         width="135.5654296875"
+         height="40"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect8" />
+    </g>
+    <g
+       id="g10">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 18 42 L 153.5654296875 42 L 153.5654296875 82 L 18 82 L 18 42 Z Z"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path9" />
+    </g>
+    <g
+       id="g12">
+      <g
+         id="g11">
+        <path
+           fill="none"
+           stroke="none"
+           id="path10" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="undefined"
+           x="84.28271484375"
+           y="53.5"
+           text-anchor="middle"
+           dominant-baseline="central"
+           transform="matrix(1 0 0 1 2 2)"
+           id="text10">guest: Hotel Guest</text>
+      </g>
+    </g>
+    <g
+       id="g13">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 86.5 83 L 86.5 242"
+         stroke-miterlimit="10"
+         stroke-dasharray="3"
+         id="path12" />
+    </g>
+    <g
+       id="g14">
+      <rect
+         fill="#C0C0C0"
+         stroke="none"
+         x="223"
+         y="47"
+         width="110.27001953125"
+         height="40"
+         transform="matrix(1 0 0 1 2 2)"
+         fill-opacity="0.2"
+         id="rect13" />
+    </g>
+    <g
+       id="g15">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="216"
+         y="40"
+         width="110.27001953125"
+         height="40"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect14" />
+    </g>
+    <g
+       id="g16">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 218 42 L 328.27001953125 42 L 328.27001953125 82 L 218 82 L 218 42 Z Z"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path15" />
+    </g>
+    <g
+       id="g18">
+      <g
+         id="g17">
+        <path
+           fill="none"
+           stroke="none"
+           id="path16" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="undefined"
+           x="271.635009765625"
+           y="53.5"
+           text-anchor="middle"
+           dominant-baseline="central"
+           transform="matrix(1 0 0 1 2 2)"
+           id="text16">hotelDB: Hotel</text>
+      </g>
+    </g>
+    <g
+       id="g19">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 273.5 83 L 273.5 242"
+         stroke-miterlimit="10"
+         stroke-dasharray="3"
+         id="path18" />
+    </g>
+    <g
+       id="g20">
+      <rect
+         fill="#C0C0C0"
+         stroke="none"
+         x="519"
+         y="47"
+         width="144.29345703125"
+         height="40"
+         transform="matrix(1 0 0 1 2 2)"
+         fill-opacity="0.2"
+         id="rect19" />
+    </g>
+    <g
+       id="g21">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="512"
+         y="40"
+         width="144.29345703125"
+         height="40"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect20" />
+    </g>
+    <g
+       id="g22">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 514 42 L 658.29345703125 42 L 658.29345703125 82 L 514 82 L 514 42 Z Z"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path21" />
+    </g>
+    <g
+       id="g24">
+      <g
+         id="g23">
+        <path
+           fill="none"
+           stroke="none"
+           id="path22" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="undefined"
+           x="584.646728515625"
+           y="53.5"
+           text-anchor="middle"
+           dominant-baseline="central"
+           transform="matrix(1 0 0 1 2 2)"
+           id="text22">gymPass: GymPass</text>
+      </g>
+    </g>
+    <g
+       id="g25">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 586.5 83 L 586.5 156"
+         stroke-miterlimit="10"
+         stroke-dasharray="3"
+         id="path24" />
+    </g>
+    <g
+       id="g26">
+      <rect
+         fill="#C0C0C0"
+         stroke="none"
+         x="415"
+         y="171"
+         width="161.55908203125"
+         height="40"
+         transform="matrix(1 0 0 1 2 2)"
+         fill-opacity="0.2"
+         id="rect25" />
+    </g>
+    <g
+       id="g27">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="408"
+         y="164"
+         width="161.55908203125"
+         height="40"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect26" />
+    </g>
+    <g
+       id="g28">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 410 166 L 571.55908203125 166 L 571.55908203125 206 L 410 206 L 410 166 Z Z"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path27" />
+    </g>
+    <g
+       id="g30">
+      <g
+         id="g29">
+        <path
+           fill="none"
+           stroke="none"
+           id="path28" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="undefined"
+           x="489.279541015625"
+           y="177.5"
+           text-anchor="middle"
+           dominant-baseline="central"
+           transform="matrix(1 0 0 1 2 2)"
+           id="text28">booking: Booking</text>
+      </g>
+    </g>
+    <g
+       id="g31">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 491.5 207 L 491.5 256"
+         stroke-miterlimit="10"
+         stroke-dasharray="3"
+         id="path30" />
+    </g>
+    <g
+       id="g32">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 87 106 L 266 106"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path31" />
+    </g>
+    <g
+       id="g33">
+      <path
+         fill="#000000"
+         stroke="none"
+         paint-order="stroke fill markers"
+         d=" M 255.83732514237585 110.20951775601598 L 266 106 L 255.83732514237585 101.79048224398402"
+         id="path32" />
+    </g>
+    <g
+       id="g34">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 255.83732514237585 110.20951775601598 L 266 106 L 255.83732514237585 101.79048224398402 L 255.83732514237585 110.20951775601598"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path33" />
+    </g>
+    <g
+       id="g35">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="111"
+         y="88"
+         width="127.88623046875"
+         height="13"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect34" />
+    </g>
+    <g
+       id="g37">
+      <g
+         id="g36">
+        <path
+           fill="none"
+           stroke="none"
+           id="path35" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="undefined"
+           x="174.943115234375"
+           y="94.5"
+           text-anchor="middle"
+           dominant-baseline="central"
+           transform="matrix(1 0 0 1 2 2)"
+           id="text35">1 : purchaseGymPass</text>
+      </g>
+    </g>
+    <g
+       id="g38">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="264"
+         y="104"
+         width="14"
+         height="28"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect37" />
+    </g>
+    <g
+       id="g39">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 266 106 L 280 106 L 280 134 L 266 134 L 266 106 Z Z"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path38" />
+    </g>
+    <g
+       id="g40">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 280 114 L 579 114"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path39" />
+    </g>
+    <g
+       id="g41">
+      <path
+         fill="#000000"
+         stroke="none"
+         paint-order="stroke fill markers"
+         d=" M 568.8373251423759 118.20951775601598 L 579 114 L 568.8373251423758 109.79048224398402"
+         id="path40" />
+    </g>
+    <g
+       id="g42">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 568.8373251423759 118.20951775601598 L 579 114 L 568.8373251423758 109.79048224398402 L 568.8373251423759 118.20951775601598"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path41" />
+    </g>
+    <g
+       id="g43">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="388"
+         y="96"
+         width="78.04443359375"
+         height="13"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect42" />
+    </g>
+    <g
+       id="g45">
+      <g
+         id="g44">
+        <path
+           fill="none"
+           stroke="none"
+           id="path43" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="undefined"
+           x="427.022216796875"
+           y="102.5"
+           text-anchor="middle"
+           dominant-baseline="central"
+           transform="matrix(1 0 0 1 2 2)"
+           id="text43">2 : getPrice</text>
+      </g>
+    </g>
+    <g
+       id="g46">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="577"
+         y="112"
+         width="14"
+         height="28"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect45" />
+    </g>
+    <g
+       id="g47">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 579 114 L 593 114 L 593 142 L 579 142 L 579 114 Z Z"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path46" />
+    </g>
+    <g
+       id="g48">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 266 130 L 93 130"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path47" />
+    </g>
+    <g
+       id="g49">
+      <path
+         fill="#000000"
+         stroke="none"
+         paint-order="stroke fill markers"
+         d=" M 103.16267485762415 125.79048224398402 L 93 130 L 103.16267485762415 134.209517756016"
+         id="path48" />
+    </g>
+    <g
+       id="g50">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 103.16267485762415 125.79048224398402 L 93 130 L 103.16267485762415 134.209517756016 L 103.16267485762415 125.79048224398402"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path49" />
+    </g>
+    <g
+       id="g51">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="132"
+         y="132"
+         width="88.14990234375"
+         height="13"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect50" />
+    </g>
+    <g
+       id="g53">
+      <g
+         id="g52">
+        <path
+           fill="none"
+           stroke="none"
+           id="path51" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="undefined"
+           x="176.074951171875"
+           y="138.5"
+           text-anchor="middle"
+           dominant-baseline="central"
+           transform="matrix(1 0 0 1 2 2)"
+           id="text51">3 : displayPrice</text>
+      </g>
+    </g>
+    <g
+       id="g54">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="77"
+         y="128"
+         width="14"
+         height="28"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect53" />
+    </g>
+    <g
+       id="g55">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 79 130 L 93 130 L 93 158 L 79 158 L 79 130 Z Z"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path54" />
+    </g>
+    <g
+       id="g56">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 274 186 L 410 186"
+         stroke-miterlimit="10"
+         stroke-dasharray="3"
+         id="path55" />
+    </g>
+    <g
+       id="g57">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 399.83732514237585 190.209517756016 L 410 186 L 399.83732514237585 181.790482243984"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path56" />
+    </g>
+    <g
+       id="g58">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="275"
+         y="168"
+         width="130.076171875"
+         height="13"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect57" />
+    </g>
+    <g
+       id="g60">
+      <g
+         id="g59">
+        <path
+           fill="none"
+           stroke="none"
+           id="path58" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="undefined"
+           x="340.0380859375"
+           y="174.5"
+           text-anchor="middle"
+           dominant-baseline="central"
+           transform="matrix(1 0 0 1 2 2)"
+           id="text58">4 : createPassBooking</text>
+      </g>
+    </g>
+    <g
+       id="g61">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="315"
+         y="153"
+         width="50.5908203125"
+         height="13"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect60" />
+    </g>
+    <g
+       id="g63">
+      <g
+         id="g62">
+        <path
+           fill="none"
+           stroke="none"
+           id="path61" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="undefined"
+           x="340.29541015625"
+           y="159.5"
+           text-anchor="middle"
+           dominant-baseline="central"
+           transform="matrix(1 0 0 1 2 2)"
+           id="text61">«create»</text>
+      </g>
+    </g>
+    <g
+       id="g64">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="80"
+         y="240"
+         width="416"
+         height="72"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect63" />
+    </g>
+    <g
+       id="g65">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 82 242 L 498 242 L 498 314 L 82 314 L 82 242 Z Z"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path64" />
+    </g>
+    <g
+       id="g66">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 82 242 L 82 265 L 107.1708984375 265 L 118.6708984375 253.5 L 118.6708984375 242 L 82 242 L 82 242"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path65" />
+    </g>
+    <g
+       id="g68">
+      <g
+         id="g67">
+        <path
+           fill="none"
+           stroke="none"
+           id="path66" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="undefined"
+           x="306.33544921875"
+           y="251.5"
+           text-anchor="middle"
+           dominant-baseline="central"
+           transform="matrix(1 0 0 1 2 2)"
+           id="text66">Booking &amp; Payment</text>
+      </g>
+    </g>
+    <g
+       id="g70">
+      <g
+         id="g69">
+        <path
+           fill="none"
+           stroke="none"
+           id="path68" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="undefined"
+           x="92.58544921875"
+           y="251.5"
+           text-anchor="middle"
+           dominant-baseline="central"
+           transform="matrix(1 0 0 1 2 2)"
+           id="text68">ref</text>
+      </g>
+    </g>
+  </g>
+</svg>

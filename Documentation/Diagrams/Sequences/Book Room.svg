@@ -1,0 +1,913 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   width="712"
+   height="612"
+   id="svg79"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="g79">
+    <g
+       id="g1">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 10 10 L 702 10 L 702 602 L 10 602 L 10 10"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path1" />
+    </g>
+    <g
+       id="g2">
+      <path
+         fill="#ffffff"
+         stroke="none"
+         paint-order="stroke fill markers"
+         d=" M 10 10 L 10 33 L 107.64990234375 33 L 119.14990234375 21.5 L 119.14990234375 10 L 10 10"
+         id="path2" />
+    </g>
+    <g
+       id="g3">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 10 10 L 10 33 L 107.64990234375 33 L 119.14990234375 21.5 L 119.14990234375 10 L 10 10 L 10 10"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path3" />
+    </g>
+    <g
+       id="g5">
+      <g
+         id="g4">
+        <path
+           fill="none"
+           stroke="none"
+           id="path4" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="undefined"
+           x="66.68994140625"
+           y="19.5"
+           text-anchor="middle"
+           dominant-baseline="central"
+           transform="matrix(1 0 0 1 2 2)"
+           id="text4">Book Room</text>
+      </g>
+    </g>
+    <g
+       id="g7">
+      <g
+         id="g6">
+        <path
+           fill="none"
+           stroke="none"
+           id="path5" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="undefined"
+           x="19.864990234375"
+           y="19.5"
+           text-anchor="middle"
+           dominant-baseline="central"
+           transform="matrix(1 0 0 1 2 2)"
+           id="text5">sd</text>
+      </g>
+    </g>
+    <g
+       id="g8">
+      <rect
+         fill="#C0C0C0"
+         stroke="none"
+         x="31"
+         y="47"
+         width="135.5654296875"
+         height="40"
+         transform="matrix(1 0 0 1 2 2)"
+         fill-opacity="0.2"
+         id="rect7" />
+    </g>
+    <g
+       id="g9">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="24"
+         y="40"
+         width="135.5654296875"
+         height="40"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect8" />
+    </g>
+    <g
+       id="g10">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 26 42 L 161.5654296875 42 L 161.5654296875 82 L 26 82 L 26 42 Z Z"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path9" />
+    </g>
+    <g
+       id="g12">
+      <g
+         id="g11">
+        <path
+           fill="none"
+           stroke="none"
+           id="path10" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="undefined"
+           x="92.28271484375"
+           y="53.5"
+           text-anchor="middle"
+           dominant-baseline="central"
+           transform="matrix(1 0 0 1 2 2)"
+           id="text10">guest: Hotel Guest</text>
+      </g>
+    </g>
+    <g
+       id="g13">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 94.5 83 L 94.5 386"
+         stroke-miterlimit="10"
+         stroke-dasharray="3"
+         id="path12" />
+    </g>
+    <g
+       id="g14">
+      <rect
+         fill="#C0C0C0"
+         stroke="none"
+         x="223"
+         y="47"
+         width="110.27001953125"
+         height="40"
+         transform="matrix(1 0 0 1 2 2)"
+         fill-opacity="0.2"
+         id="rect13" />
+    </g>
+    <g
+       id="g15">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="216"
+         y="40"
+         width="110.27001953125"
+         height="40"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect14" />
+    </g>
+    <g
+       id="g16">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 218 42 L 328.27001953125 42 L 328.27001953125 82 L 218 82 L 218 42 Z Z"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path15" />
+    </g>
+    <g
+       id="g18">
+      <g
+         id="g17">
+        <path
+           fill="none"
+           stroke="none"
+           id="path16" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="undefined"
+           x="271.635009765625"
+           y="53.5"
+           text-anchor="middle"
+           dominant-baseline="central"
+           transform="matrix(1 0 0 1 2 2)"
+           id="text16">hotelDB: Hotel</text>
+      </g>
+    </g>
+    <g
+       id="g19">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 273.5 83 L 273.5 386"
+         stroke-miterlimit="10"
+         stroke-dasharray="3"
+         id="path18" />
+    </g>
+    <g
+       id="g20">
+      <rect
+         fill="#C0C0C0"
+         stroke="none"
+         x="591"
+         y="47"
+         width="104.5"
+         height="40"
+         transform="matrix(1 0 0 1 2 2)"
+         fill-opacity="0.2"
+         id="rect19" />
+    </g>
+    <g
+       id="g21">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="584"
+         y="40"
+         width="104.5"
+         height="40"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect20" />
+    </g>
+    <g
+       id="g22">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 586 42 L 690.5 42 L 690.5 82 L 586 82 L 586 42 Z Z"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path21" />
+    </g>
+    <g
+       id="g24">
+      <g
+         id="g23">
+        <path
+           fill="none"
+           stroke="none"
+           id="path22" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="undefined"
+           x="636.75"
+           y="53.5"
+           text-anchor="middle"
+           dominant-baseline="central"
+           transform="matrix(1 0 0 1 2 2)"
+           id="text22">rooms: Room</text>
+      </g>
+    </g>
+    <g
+       id="g25">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 638.5 83 L 638.5 236"
+         stroke-miterlimit="10"
+         stroke-dasharray="3"
+         id="path24" />
+    </g>
+    <g
+       id="g26">
+      <rect
+         fill="#C0C0C0"
+         stroke="none"
+         x="399"
+         y="123"
+         width="167.31005859375"
+         height="40"
+         transform="matrix(1 0 0 1 2 2)"
+         fill-opacity="0.2"
+         id="rect25" />
+    </g>
+    <g
+       id="g27">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="392"
+         y="116"
+         width="167.31005859375"
+         height="40"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect26" />
+    </g>
+    <g
+       id="g28">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 394 118 L 561.31005859375 118 L 561.31005859375 158 L 394 158 L 394 118 Z Z"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path27" />
+    </g>
+    <g
+       id="g30">
+      <g
+         id="g29">
+        <path
+           fill="none"
+           stroke="none"
+           id="path28" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="undefined"
+           x="476.155029296875"
+           y="129.5"
+           text-anchor="middle"
+           dominant-baseline="central"
+           transform="matrix(1 0 0 1 2 2)"
+           id="text28">booking: RoomBooking</text>
+      </g>
+    </g>
+    <g
+       id="g31">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 478.5 159 L 478.5 409"
+         stroke-miterlimit="10"
+         stroke-dasharray="3"
+         id="path30" />
+    </g>
+    <g
+       id="g32">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 95 114 L 266 114"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path31" />
+    </g>
+    <g
+       id="g33">
+      <path
+         fill="#000000"
+         stroke="none"
+         paint-order="stroke fill markers"
+         d=" M 255.83732514237585 118.20951775601598 L 266 114 L 255.83732514237585 109.79048224398402"
+         id="path32" />
+    </g>
+    <g
+       id="g34">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 255.83732514237585 118.20951775601598 L 266 114 L 255.83732514237585 109.79048224398402 L 255.83732514237585 118.20951775601598"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path33" />
+    </g>
+    <g
+       id="g35">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="102"
+         y="96"
+         width="153.16259765625"
+         height="13"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect34" />
+    </g>
+    <g
+       id="g37">
+      <g
+         id="g36">
+        <path
+           fill="none"
+           stroke="none"
+           id="path35" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="undefined"
+           x="178.581298828125"
+           y="102.5"
+           text-anchor="middle"
+           dominant-baseline="central"
+           transform="matrix(1 0 0 1 2 2)"
+           id="text35">1 : selectRoom(roomType)</text>
+      </g>
+    </g>
+    <g
+       id="g38">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="264"
+         y="112"
+         width="14"
+         height="28"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect37" />
+    </g>
+    <g
+       id="g39">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 266 114 L 280 114 L 280 142 L 266 142 L 266 114 Z Z"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path38" />
+    </g>
+    <g
+       id="g40">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 280 138 L 394 138"
+         stroke-miterlimit="10"
+         stroke-dasharray="3"
+         id="path39" />
+    </g>
+    <g
+       id="g41">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 383.83732514237585 142.209517756016 L 394 138 L 383.83732514237585 133.790482243984"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path40" />
+    </g>
+    <g
+       id="g42">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="285"
+         y="120"
+         width="101.17529296875"
+         height="13"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect41" />
+    </g>
+    <g
+       id="g44">
+      <g
+         id="g43">
+        <path
+           fill="none"
+           stroke="none"
+           id="path42" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="undefined"
+           x="335.587646484375"
+           y="126.5"
+           text-anchor="middle"
+           dominant-baseline="central"
+           transform="matrix(1 0 0 1 2 2)"
+           id="text42">2 : createBooking</text>
+      </g>
+    </g>
+    <g
+       id="g45">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="310"
+         y="105"
+         width="50.5908203125"
+         height="13"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect44" />
+    </g>
+    <g
+       id="g47">
+      <g
+         id="g46">
+        <path
+           fill="none"
+           stroke="none"
+           id="path45" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="undefined"
+           x="335.29541015625"
+           y="111.5"
+           text-anchor="middle"
+           dominant-baseline="central"
+           transform="matrix(1 0 0 1 2 2)"
+           id="text45">«create»</text>
+      </g>
+    </g>
+    <g
+       id="g48">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 479 194 L 631 194"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path47" />
+    </g>
+    <g
+       id="g49">
+      <path
+         fill="#000000"
+         stroke="none"
+         paint-order="stroke fill markers"
+         d=" M 620.8373251423759 198.209517756016 L 631 194 L 620.8373251423758 189.790482243984"
+         id="path48" />
+    </g>
+    <g
+       id="g50">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 620.8373251423759 198.209517756016 L 631 194 L 620.8373251423758 189.790482243984 L 620.8373251423759 198.209517756016"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path49" />
+    </g>
+    <g
+       id="g51">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="485"
+         y="176"
+         width="137.2744140625"
+         height="13"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect50" />
+    </g>
+    <g
+       id="g53">
+      <g
+         id="g52">
+        <path
+           fill="none"
+           stroke="none"
+           id="path51" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="undefined"
+           x="553.63720703125"
+           y="182.5"
+           text-anchor="middle"
+           dominant-baseline="central"
+           transform="matrix(1 0 0 1 2 2)"
+           id="text51">3 : getRoom(roomType)</text>
+      </g>
+    </g>
+    <g
+       id="g54">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="629"
+         y="192"
+         width="14"
+         height="28"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect53" />
+    </g>
+    <g
+       id="g55">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 631 194 L 645 194 L 645 222 L 631 222 L 631 194 Z Z"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path54" />
+    </g>
+    <g
+       id="g56">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 478 242 L 101 242"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path55" />
+    </g>
+    <g
+       id="g57">
+      <path
+         fill="#000000"
+         stroke="none"
+         paint-order="stroke fill markers"
+         d=" M 111.16267485762415 237.790482243984 L 101 242 L 111.16267485762415 246.209517756016"
+         id="path56" />
+    </g>
+    <g
+       id="g58">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 111.16267485762415 237.790482243984 L 101 242 L 111.16267485762415 246.209517756016 L 111.16267485762415 237.790482243984"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path57" />
+    </g>
+    <g
+       id="g59">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="207"
+         y="244"
+         width="159.6689453125"
+         height="13"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect58" />
+    </g>
+    <g
+       id="g61">
+      <g
+         id="g60">
+        <path
+           fill="none"
+           stroke="none"
+           id="path59" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="undefined"
+           x="286.83447265625"
+           y="250.5"
+           text-anchor="middle"
+           dominant-baseline="central"
+           transform="matrix(1 0 0 1 2 2)"
+           id="text59">4 : promptNumberOfGuests</text>
+      </g>
+    </g>
+    <g
+       id="g62">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="85"
+         y="240"
+         width="14"
+         height="28"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect61" />
+    </g>
+    <g
+       id="g63">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 87 242 L 101 242 L 101 270 L 87 270 L 87 242 Z Z"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path62" />
+    </g>
+    <g
+       id="g64">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 95 322 L 471 322"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path63" />
+    </g>
+    <g
+       id="g65">
+      <path
+         fill="#000000"
+         stroke="none"
+         paint-order="stroke fill markers"
+         d=" M 460.83732514237585 326.209517756016 L 471 322 L 460.83732514237585 317.790482243984"
+         id="path64" />
+    </g>
+    <g
+       id="g66">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 460.83732514237585 326.209517756016 L 471 322 L 460.83732514237585 317.790482243984 L 460.83732514237585 326.209517756016"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path65" />
+    </g>
+    <g
+       id="g67">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="207"
+         y="304"
+         width="148.83984375"
+         height="13"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect66" />
+    </g>
+    <g
+       id="g69">
+      <g
+         id="g68">
+        <path
+           fill="none"
+           stroke="none"
+           id="path67" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="undefined"
+           x="281.419921875"
+           y="310.5"
+           text-anchor="middle"
+           dominant-baseline="central"
+           transform="matrix(1 0 0 1 2 2)"
+           id="text67">5 : enterNumberOfGuests</text>
+      </g>
+    </g>
+    <g
+       id="g70">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="469"
+         y="320"
+         width="14"
+         height="28"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect69" />
+    </g>
+    <g
+       id="g71">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 471 322 L 485 322 L 485 350 L 471 350 L 471 322 Z Z"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path70" />
+    </g>
+    <g
+       id="g72">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="88"
+         y="384"
+         width="392"
+         height="112"
+         transform="matrix(1 0 0 1 2 2)"
+         id="rect71" />
+    </g>
+    <g
+       id="g73">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 90 386 L 482 386 L 482 498 L 90 498 L 90 386 Z Z"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path72" />
+    </g>
+    <g
+       id="g74">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d=" M 90 386 L 90 409 L 115.1708984375 409 L 126.6708984375 397.5 L 126.6708984375 386 L 90 386 L 90 386"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path73" />
+    </g>
+    <g
+       id="g76">
+      <g
+         id="g75">
+        <path
+           fill="none"
+           stroke="none"
+           id="path74" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="undefined"
+           x="302.33544921875"
+           y="395.5"
+           text-anchor="middle"
+           dominant-baseline="central"
+           transform="matrix(1 0 0 1 2 2)"
+           id="text74">Booking &amp; Payment</text>
+      </g>
+    </g>
+    <g
+       id="g78">
+      <g
+         id="g77">
+        <path
+           fill="none"
+           stroke="none"
+           id="path76" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="undefined"
+           x="100.58544921875"
+           y="395.5"
+           text-anchor="middle"
+           dominant-baseline="central"
+           transform="matrix(1 0 0 1 2 2)"
+           id="text76">ref</text>
+      </g>
+    </g>
+  </g>
+</svg>

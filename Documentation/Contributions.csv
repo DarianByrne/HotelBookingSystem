@@ -1,0 +1,36 @@
+Date,Person(s),Work
+Tuesday 8 October 2024,"Kyle, Darian",Use case diagram initial draft
+Wednesday 9 October 2024,"Milo, Darian",User stories initial draft
+Thursday 10 October 2024,Kyle,Use case diagram UML
+Monday 14 October 2024,Kyle,Uploaded project summary
+Tuesday 15 October 2024,"Kyle, Darian",Use case diagram final
+Wednesday 16 October 2024,"Darian, Milo, Kyle",User stories final
+Friday 18 October 2024,Kyle,"Scenario specifications - booking & payment, book room, browse room, book gym"
+Sunday 20 October 2024,Darian,Scenario specification reserve table
+Tuesday 22 October 2024,Darian,Scenario specification book wedding
+Monday 4 November 2024,Darian,Scenario specification book spa
+Monday 4 November 2024,Kyle,Scenario specification - view availability
+Monday 4 November 2024,Milo,"Scenario specification view menu, book conference"
+Thursday 7 November 2024,Kyle,Initial class diagram
+Thursday 7 November 2024,Milo,Alternative class diagram
+Saturday 9 November 2024,Kyle,Updated class diagram and inserted it into working document
+Wednesday 13 November 2024,Darian,Sequence diagram booking & payment
+Thursday 14 November 2024,Kyle,Sequence diagram browse rooms
+Thursday 14 November 2024,Kyle,"Sequence diagram book room, reserve table"
+Friday 15 November 2024,Kyle,Sequence diagram book gym
+Friday 15 November 2024,Kyle,"Message analysis tables - browse rooms, book room, reserve table, book gym"
+Sunday 17 November 2024,Darian,Sequence diagram purchase pass
+Monday 18 November 2024,Darian,Sequence diagram book spa
+Tuesday 19 November 2024,Darian,Sequence diagram book wedding
+Wednesday 20 November 2024,Darian,"Message analysis tables - booking & payment, purchase pass, book spa, book wedding"
+Thursday 21 November 2024,Kyle,"Sequence diagram book conference, view availability, view menu. Pasted all sequence diagrams into working document"
+Thursday 21 November 2024,Darian,Test case booking & payment
+Thursday 21 November 2024,Kyle,Finished message analysis tables and pasted them into working document
+Saturday 23 November 2024,Darian,"Test case purchase pass, book spa, book wedding; Book wedding steps rework"
+Tuesday 26 November 2024,Kyle,"Test case browse rooms, book room, reserve table, book gym"
+Tuesday 26 November 2024,Kyle,"Test case book conference, view availability, view menu"
+Tuesday 26 November 2024,Darian,"Updated sequence diagrams book room, reserve table, book gym, book conference, "
+Tuesday 26 November 2024,Darian,"Updated message analysis tables book room, reserve table, book gym, book conference, "
+Tuesday 26 November 2024,Darian,Updated message analysis tables browse rooms
+Thursday 28 November 2024,"Darian, Milo, Kyle","Edited scenarios, sequence diagrams and message analysis tables"
+Thursday 28 November 2024,Darian,Final editing and formatting to document and diagrams throughout
