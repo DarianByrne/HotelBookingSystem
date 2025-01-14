@@ -1,4 +1,4 @@
-package database.customer;
+package ie.hotelbooking.database.customer;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,33 +6,32 @@ import java.sql.SQLException;
 import java.sql.PreparedStatement;
 import java.sql.Date;
 
-public class InsertCustomer {
+public class UpdateCustomer {
     public static void main(String[] args) {
-        final String databaseUrl = "jdbc:mysql://localhost/hotel_booking_system";
+        final String databaseURL = "jdbc:mysql://localhost/hotel_booking_system";
         final String user = "root";
         final String password = "#UiCM5I84evek@";
 
         Connection connection = null;
         PreparedStatement preparedStatement = null;
-        String name = "John Smith";
-        String phoneNumber = "087-1234567";
-        String email = "john.smith@hotmail.com";
-        Date dateOfBirth = Date.valueOf("1990-09-01");
-        String address = "Carlow";
+        
+        String name = "Max Rudolf";
+        String phoneNumber = "083-9876543";
+        String email = "max.rudolf@hotmail.com";
+        Date dateOfBirth = Date.valueOf("2000-10-12");
+        String address = "Kilkenny";
         int i = 0;
 
         try {
-            // Establish connection to database
-            connection = DriverManager.getConnection(databaseUrl, user, password);
-            // Create prepared statement for inserting data into table
-            preparedStatement = connection.prepareStatement("INSERT INTO customer(name, phoneNumber, email, dateOfBirth, address) VALUES(?, ?, ?, ?, ?);");
+            connection = DriverManager.getConnection(databaseURL, user, password);
+            preparedStatement = connection.prepareStatement("UPDATE customer SET name=?, phoneNumber=?, email=?, dateOfBirth=?, address=?");
             preparedStatement.setString(1, name);
             preparedStatement.setString(2, phoneNumber);
             preparedStatement.setString(3, email);
             preparedStatement.setDate(4, dateOfBirth);
             preparedStatement.setString(5, address);
             i = preparedStatement.executeUpdate();
-            System.out.println(i + " records successfully added to the table");
+            System.out.println(i + " records successfuly updated in the table");
         } catch(SQLException sqlException) {
             sqlException.printStackTrace();
         } finally {

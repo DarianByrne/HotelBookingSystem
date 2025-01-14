@@ -1,4 +1,4 @@
-package database.customer;
+package ie.hotelbooking.database.customer;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
