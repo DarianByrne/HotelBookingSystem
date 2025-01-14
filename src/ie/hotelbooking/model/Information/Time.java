@@ -1,4 +1,4 @@
-package ie.hotelbooking.Information;
+package ie.hotelbooking.model.Information;
 
 /**
  *

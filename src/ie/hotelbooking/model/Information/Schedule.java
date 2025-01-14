@@ -1,6 +1,7 @@
-package ie.hotelbooking.Information;
+package ie.hotelbooking.model.Information;
 
-import ie.hotelbooking.Booking.Booking;
+import ie.hotelbooking.model.*;
+import ie.hotelbooking.model.Booking.*;
 
 /**
  *

@@ -1,7 +1,6 @@
-package ie.hotelbooking.Booking;
+package ie.hotelbooking.model.Booking;
 
-import ie.hotelbooking.Information.Date;
-import ie.hotelbooking.Information.Time;
+import ie.hotelbooking.model.Information.*;
 
 /**
  *

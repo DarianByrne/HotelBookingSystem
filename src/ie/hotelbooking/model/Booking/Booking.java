@@ -1,9 +1,9 @@
-package ie.hotelbooking.Booking;
+package ie.hotelbooking.model.Booking;
 
-import ie.hotelbooking.Customer.Customer;
-import ie.hotelbooking.Information.Date;
-import ie.hotelbooking.Information.Payment;
-import ie.hotelbooking.Information.Time;
+import ie.hotelbooking.model.Customer.*;
+import ie.hotelbooking.model.Information.Date;
+import ie.hotelbooking.model.Information.Payment;
+import ie.hotelbooking.model.Information.Time;
 
 /**
  *

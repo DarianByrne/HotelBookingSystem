@@ -1,4 +1,4 @@
-package ie.hotelbooking.Customer;
+package ie.hotelbooking.model.Customer;
 
 /**
  *

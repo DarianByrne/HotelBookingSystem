@@ -1,4 +1,4 @@
-package ie.hotelbooking.Booking;
+package ie.hotelbooking.model.Booking;
 
 import ie.hotelbooking.Location.Room;
 
