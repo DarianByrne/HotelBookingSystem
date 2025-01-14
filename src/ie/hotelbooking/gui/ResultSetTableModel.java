@@ -10,7 +10,7 @@ import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import javax.swing.table.AbstractTableModel;
 
-public class ResultSetTableModel extends AbstractTableModel {
+abstract class ResultSetTableModel extends AbstractTableModel {
     private Database database;
     private Connection connection;
     private Statement statement;
@@ -36,7 +36,7 @@ public class ResultSetTableModel extends AbstractTableModel {
         fireTableStructureChanged();
     }
 
-    public Class getColumnClass(int column) throws new IllegalStateException  {
+    public Class getColumnClass(int column) throws IllegalStateException  {
         if(!connectedToDatabase) throw new IllegalStateException("Not connected to database");
         try {
             String className = metaData.getColumnClassName(column + 1);
@@ -47,7 +47,7 @@ public class ResultSetTableModel extends AbstractTableModel {
         return Object.class;
     }
 
-    public int getColumnCount() throws new IllegalStateException {
+    public int getColumnCount() throws IllegalStateException {
         if(!connectedToDatabase) throw new IllegalStateException("Not connected to database");
         try {
             return metaData.getColumnCount();
@@ -56,17 +56,18 @@ public class ResultSetTableModel extends AbstractTableModel {
         }
         return 0;
     }
-    public int getRowCount() throws new IllegalStateException {
+    public int getRowCount() throws IllegalStateException {
         if(!connectedToDatabase) throw new IllegalStateException("Not connected to database");
         return numberOfRows;
     }
-    public String getColumnName(int column) throws new IllegalStateException {
+    public String getColumnName(int column) throws IllegalStateException {
         if(!connectedToDatabase) throw new IllegalStateException("Not connected to database");
         try {
             return metaData.getColumnName(column + 1);
         } catch(SQLException sqlException) {
             sqlException.printStackTrace();
         }
+        return "";
     }
 
     public void disconnectFromDatabase() {
