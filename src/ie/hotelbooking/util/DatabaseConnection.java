@@ -1,6 +1,6 @@
 package ie.hotelbooking.util;
 
-import ie.hotelbooking.Database;
+import ie.hotelbooking.util.Database;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
