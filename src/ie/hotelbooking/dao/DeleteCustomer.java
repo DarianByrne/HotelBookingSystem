@@ -1,12 +1,11 @@
-package ie.hotelbooking.database.customer;
+package ie.hotelbooking.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.PreparedStatement;
-import java.sql.Date;
 
-public class UpdateCustomer {
+public class DeleteCustomer {
     public static void main(String[] args) {
         final String databaseURL = "jdbc:mysql://localhost/hotel_booking_system";
         final String user = "root";
@@ -14,24 +13,15 @@ public class UpdateCustomer {
 
         Connection connection = null;
         PreparedStatement preparedStatement = null;
-        
-        String name = "Max Rudolf";
-        String phoneNumber = "083-9876543";
-        String email = "max.rudolf@hotmail.com";
-        Date dateOfBirth = Date.valueOf("2000-10-12");
-        String address = "Kilkenny";
         int i = 0;
+        int customerID = 1;
 
         try {
             connection = DriverManager.getConnection(databaseURL, user, password);
-            preparedStatement = connection.prepareStatement("UPDATE customer SET name=?, phoneNumber=?, email=?, dateOfBirth=?, address=?");
-            preparedStatement.setString(1, name);
-            preparedStatement.setString(2, phoneNumber);
-            preparedStatement.setString(3, email);
-            preparedStatement.setDate(4, dateOfBirth);
-            preparedStatement.setString(5, address);
+            preparedStatement = connection.prepareStatement("DELETE FROM customer WHERE customerID=?");
+            preparedStatement.setInt(1, customerID);
             i = preparedStatement.executeUpdate();
-            System.out.println(i + " records successfuly updated in the table");
+            System.out.println(i + " records successfully deleted from the table");
         } catch(SQLException sqlException) {
             sqlException.printStackTrace();
         } finally {
