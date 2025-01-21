@@ -1,4 +1,4 @@
-package ie.hotelbooking.Gym;
+package ie.hotelbooking.model.Gym;
 
 /**
  *

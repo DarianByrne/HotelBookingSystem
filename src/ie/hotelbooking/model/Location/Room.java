@@ -1,4 +1,4 @@
-package ie.hotelbooking.Location;
+package ie.hotelbooking.model.Location;
 
 /**
  *

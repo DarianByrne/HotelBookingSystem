@@ -2,6 +2,8 @@ package ie.hotelbooking.model.Information;
 
 import ie.hotelbooking.model.*;
 import ie.hotelbooking.model.Booking.*;
+import java.sql.Date;
+import java.sql.Time;
 
 /**
  *

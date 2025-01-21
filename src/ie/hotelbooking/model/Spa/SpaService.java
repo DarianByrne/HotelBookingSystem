@@ -1,4 +1,4 @@
-package ie.hotelbooking.Spa;
+package ie.hotelbooking.model.Spa;
 
 /**
  *

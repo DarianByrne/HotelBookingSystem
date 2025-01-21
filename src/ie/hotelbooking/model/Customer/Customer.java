@@ -3,6 +3,7 @@ package ie.hotelbooking.model.Customer;
 import java.sql.Date;
 
 public class Customer {
+	private int customerID;
 	private String name;
 	private String phoneNumber;
 	private String email;
@@ -19,6 +20,12 @@ public class Customer {
 		this.address = address;
 	}
 
+	public int getCustomerID() {
+		return customerID;
+	}
+	public void setCustomerID(int customerID) {
+		this.customerID = customerID;
+	}
 	public String getName() {
 		return name;
 	}
