@@ -13,7 +13,6 @@ import java.sql.Date;
 
 public class CustomerDAO {
     public void addCustomer(Customer customer) {
-        Database database = new Database();
         Connection connection = null;
         PreparedStatement preparedStatement = null;
         String name = customer.getName();
@@ -24,7 +23,7 @@ public class CustomerDAO {
         int i = 0;
 
         try {
-            connection = DriverManager.getConnection(database.getDatabaseURL(), database.getDatabaseUser(), database.getDatabasePassword());
+            connection = Database.getConnection();
             preparedStatement = connection.prepareStatement("INSERT INTO customer(name, phoneNumber, email, dateOfBirth, address) VALUES(?, ?, ?, ?, ?);");
             preparedStatement.setString(1, name);
             preparedStatement.setString(2, phoneNumber);
@@ -45,14 +44,13 @@ public class CustomerDAO {
         }
     }
     public Customer getCustomer(String name) {
-        Database database = new Database();
         Connection connection = null;
         PreparedStatement preparedStatement = null;
         ResultSet resultSet = null;
         Customer customer = new Customer();
 
         try {
-            connection = DriverManager.getConnection(database.getDatabaseURL(), database.getDatabaseUser(), database.getDatabasePassword());
+            connection = Database.getConnection();
             preparedStatement = connection.prepareStatement("SELECT * FROM customer WHERE name=?");
             preparedStatement.setString(1, name);
             resultSet = preparedStatement.executeQuery();
@@ -80,7 +78,6 @@ public class CustomerDAO {
         return customer;
     }
     public void updateCustomer(Customer customer, String nameToUpdate) {
-        Database database = new Database();
         Connection connection = null;
         PreparedStatement preparedStatement = null;
 
@@ -92,7 +89,7 @@ public class CustomerDAO {
         int i = 0;
 
         try {
-            connection = DriverManager.getConnection(database.getDatabaseURL(), database.getDatabaseUser(), database.getDatabasePassword());
+            connection = Database.getConnection();
             preparedStatement = connection.prepareStatement("UPDATE customer SET name=?, phoneNumber=?, email=?, dateOfBirth=?, address=? WHERE name=?");
             preparedStatement.setString(1, name);
             preparedStatement.setString(2, phoneNumber);
@@ -115,14 +112,13 @@ public class CustomerDAO {
     }
     public void deleteCustomer(Customer customer)
     {
-        Database database = new Database();
         Connection connection = null;
         PreparedStatement preparedStatement = null;
         String name = "Kyle Purcell";
         int i = 0;
 
         try {
-            connection = DriverManager.getConnection(database.getDatabaseURL(), database.getDatabaseUser(), database.getDatabasePassword());
+            connection = Database.getConnection();
             preparedStatement = connection.prepareStatement("DELETE FROM customer WHERE name=?");
             preparedStatement.setString(1, name);
             i = preparedStatement.executeUpdate();

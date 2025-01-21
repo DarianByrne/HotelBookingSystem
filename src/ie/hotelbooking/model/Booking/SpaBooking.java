@@ -1,6 +1,6 @@
 package ie.hotelbooking.model.Booking;
 
-import ie.hotelbooking.Spa.SpaService;
+import ie.hotelbooking.model.Spa.SpaService;
 
 /**
  *

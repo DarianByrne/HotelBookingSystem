@@ -13,7 +13,6 @@ import java.sql.Time;
 
 public class PaymentDAO {
     public void addPayment(Payment payment) {
-        Database database = new Database();
         Connection connection = null;
         PreparedStatement preparedStatement = null;
 
@@ -28,7 +27,7 @@ public class PaymentDAO {
         int i = 0;
 
         try {
-            connection = DriverManager.getConnection(database.getDatabaseURL(), database.getDatabaseUser(), database.getDatabasePassword());
+            connection = Database.getConnection();
             preparedStatement = connection.prepareStatement("INSERT INTO payment(customerID, cardNumber, cardCVV, cardExpiryDate, cardHolderName, amount, date, time) VALUES(?, ?, ?, ?, ?, ?, ?, ?)");
             preparedStatement.setInt(1, customerID);
             preparedStatement.setInt(2, cardNumber);

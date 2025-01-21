@@ -11,7 +11,6 @@ import java.sql.ResultSetMetaData;
 import javax.swing.table.AbstractTableModel;
 
 abstract class ResultSetTableModel extends AbstractTableModel {
-    private Database database;
     private Connection connection;
     private Statement statement;
     private ResultSet resultSet;
@@ -20,8 +19,7 @@ abstract class ResultSetTableModel extends AbstractTableModel {
     private boolean connectedToDatabase;
 
     public ResultSetTableModel(String query) throws SQLException {
-        database = new Database();
-        connection = DriverManager.getConnection(database.getDatabaseURL(), database.getDatabaseUser(), database.getDatabasePassword());
+        connection = Database.getConnection();
         statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
         connectedToDatabase = true;
         setQuery(query);

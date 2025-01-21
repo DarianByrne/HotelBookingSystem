@@ -8,7 +8,6 @@ import java.sql.PreparedStatement;
 
 public class BookingDAO {
     public void addBooking(Booking booking) {
-        Database database = new Database();
         Connection connection = null;
         PreparedStatement preparedStatement = null;
 

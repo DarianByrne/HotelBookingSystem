@@ -1,6 +1,6 @@
 package ie.hotelbooking.model.Booking;
 
-import ie.hotelbooking.Gym.GymSession;
+import ie.hotelbooking.model.Gym.*;
 
 /**
  *

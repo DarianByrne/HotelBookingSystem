@@ -1,6 +1,6 @@
 package ie.hotelbooking.model.Booking;
 
-import ie.hotelbooking.Restaurant.Table;
+import ie.hotelbooking.model.Restaurant.*;
 
 /**
  *
