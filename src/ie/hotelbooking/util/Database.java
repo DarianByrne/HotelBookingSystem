@@ -1,23 +1,21 @@
 package ie.hotelbooking.util;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
 public class Database {
-    private final String databaseURL = "jdbc:mysql://localhost:3306/hotel_booking_system";
-    private final String databaseUser = "root";
-    private final String databasePassword = "#UiCM5I84evek@";
+    private static final String databaseURL = "jdbc:mysql://localhost:3306/hotel_booking_system";
+    private static final String databaseUser = "root";
+    private static final String databasePassword = "#UiCM5I84evek@";
+    private Connection connection;
 
-    public Database() {
+    private Database() {}
 
-    }
-
-    public String getDatabaseURL() {
-        return databaseURL;
-    }
-
-    public String getDatabaseUser() {
-        return databaseUser;
-    }
-
-    public String getDatabasePassword() {
-        return databasePassword;
+    public Connection getConnection() throws SQLException {
+        if (connection == null || connection.isClosed()) {
+            connection = DriverManager.getConnection(databaseURL, databaseUser, databasePassword);
+        }
+        return connection;
     }
 }
