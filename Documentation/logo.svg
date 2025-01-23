@@ -475,15 +475,48 @@
       </g>
       <text
          xml:space="preserve"
-         style="font-size:218.261px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#008267;fill-opacity:1;stroke-width:1.13677"
+         style="font-size:218.261px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;display:none;fill:#008267;fill-opacity:1;stroke-width:1.13677"
          x="-35.747578"
          y="-545.39008"
          id="text69"
          transform="scale(1,-1)"><tspan
            id="tspan69"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;font-size:218.261px;font-family:'Bodoni MT';-inkscape-font-specification:'Bodoni MT Bold Condensed';fill:#008267;fill-opacity:1;stroke-width:1.13677"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;font-size:218.261px;font-family:'Bodoni MT';-inkscape-font-specification:'Bodoni MT Bold Condensed';text-align:start;text-anchor:start;fill:#008267;fill-opacity:1;stroke-width:1.13677"
            x="-35.747578"
-           y="-545.39008">- HOTEL -</tspan></text>
+           y="-545.39008">- HOTEL</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:218.261px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;display:inline;fill:#008267;fill-opacity:1;stroke-width:1.13677"
+         x="49.617199"
+         y="-545.39008"
+         id="text2"
+         transform="scale(1,-1)"><tspan
+           id="tspan2"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;font-size:218.261px;font-family:'Bodoni MT';-inkscape-font-specification:'Bodoni MT Bold Condensed';text-align:start;text-anchor:start;fill:#008267;fill-opacity:1;stroke-width:1.13677"
+           x="49.617199"
+           y="-545.39008">HOTEL</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:218.261px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#008267;fill-opacity:1;stroke-width:1.13677"
+         x="528.23547"
+         y="-567.77039"
+         id="text69-4"
+         transform="scale(1,-1)"><tspan
+           id="tspan69-5"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;font-size:218.261px;font-family:'Bodoni MT';-inkscape-font-specification:'Bodoni MT Bold Condensed';fill:#008267;fill-opacity:1;stroke-width:1.13677"
+           x="528.23547"
+           y="-567.77039">-</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:218.262px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#008267;fill-opacity:1;stroke-width:1.13677"
+         x="-35.747463"
+         y="-567.77283"
+         id="text69-4-7"
+         transform="scale(1.0000043,-0.99999571)"><tspan
+           id="tspan69-5-1"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;font-size:218.262px;font-family:'Bodoni MT';-inkscape-font-specification:'Bodoni MT Bold Condensed';fill:#008267;fill-opacity:1;stroke-width:1.13677"
+           x="-35.747463"
+           y="-567.77283">-</tspan></text>
       <text
          xml:space="preserve"
          style="font-size:218.589px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#008267;fill-opacity:1;stroke-width:1.13848"
