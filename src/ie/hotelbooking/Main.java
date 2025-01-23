@@ -1,6 +1,7 @@
 package ie.hotelbooking;
 
 import ie.hotelbooking.dao.CustomerDAO;
+import ie.hotelbooking.dao.PaymentDAO;
 import ie.hotelbooking.model.Customer.Customer;
 import ie.hotelbooking.model.Information.Payment;
 import ie.hotelbooking.model.Information.*;
@@ -14,7 +15,7 @@ public class Main {
 		String name = "Mick Phelan";
 		String phoneNumber = "086-1602798";
 		String email = "mick.phelan@gmail.com";
-		Date dateOfBirth = new Date(10, 10, 2000);
+		Date dateOfBirth = Date.valueOf("2000-10-10");
 		String address = "Cork";
 
 		String nameToUpdate = "Donald Trump";
@@ -22,29 +23,18 @@ public class Main {
 		CustomerDAO customerDAO = new CustomerDAO();
 		Customer customerOne = new Customer(name, phoneNumber, email, dateOfBirth, address);
 
-		Customer customerTwo = customerDAO.getCustomer("Mick Phelan");
-		System.out.println(customerTwo.getCustomerID());
-		System.out.println(customerTwo.getName());
-		System.out.println(customerTwo.getPhoneNumber());
-		System.out.println(customerTwo.getEmail());
-		System.out.println(customerTwo.getDateOfBirth());
-		System.out.println(customerTwo.getAddress());
+		customerDAO.displayCustomers();
 
-		Payment payment = new Payment();
-		payment.setCustomerID(customerTwo.getCustomerID());
-		int cardNumber = 0;
-		int cardCVV = 0;
-		Date cardExpiryDate = Date.valueOf("2028-06-01");
-		String cardHolderName = "Mick Phelan";
-		double amount = 500;
-		Date date = Date.valueOf("");
-		Time time = new Time(System.currentTimeMillis());
-		payment.setCardNumber(cardNumber);
-		payment.setCardCVV(cardCVV);
-		payment.setCardExpiryDate(cardExpiryDate);
-		payment.setCardHolderName(cardHolderName);
-		payment.setAmount(amount);
-		payment.setDate(date);
-		payment.setTime(time);
+		Payment paymentOne = new Payment();
+		PaymentDAO paymentDAO = new PaymentDAO();
+		paymentOne.setCustomer(customerOne);
+		paymentOne.setCardHolderName("Donald Trump");
+		paymentOne.setCardNumber(0000);
+		paymentOne.setCardExpiryDate(Date.valueOf("2000-10-10"));
+		paymentOne.setCardCVV(987);
+		paymentOne.setTime(Time.from("12:00"));
+		paymentOne.setAmount(200);
+
+		paymentDAO.displayPayments();
 	}
 }

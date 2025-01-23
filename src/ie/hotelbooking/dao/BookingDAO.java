@@ -5,11 +5,15 @@ import ie.hotelbooking.util.Database;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.ResultSetMetaData;
 
 public class BookingDAO {
     public void addBooking(Booking booking) {
         Connection connection = null;
         PreparedStatement preparedStatement = null;
+
 
 
     }

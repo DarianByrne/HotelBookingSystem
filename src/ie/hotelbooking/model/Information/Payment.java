@@ -14,12 +14,13 @@ public class Payment {
 	private double amount;
 	private Date date;
 	private Time time;
+	private Customer customer;
 
 	public Payment() {}
 
-	public Payment(int paymentID, int customerID, int cardNumber, int cardCVV, Date cardExpiryDate, String cardHolderName, double amount, Date date, Time time, Customer customer) {
+	public Payment(int paymentID, int cardNumber, int cardCVV, Date cardExpiryDate, String cardHolderName, double amount, Date date, Time time, Customer customer) {
 		this.paymentID = paymentID;
-		this.customerID = customerID;
+		this.customer = customer;
 		this.cardNumber = cardNumber;
 		this.cardCVV = cardCVV;
 		this.cardExpiryDate = cardExpiryDate;
@@ -35,14 +36,6 @@ public class Payment {
 
 	public void setPaymentID(int paymentID) {
 		this.paymentID = paymentID;
-	}
-
-	public int getCustomerID() {
-		return customerID;
-	}
-
-	public void setCustomerID(int customerID) {
-		this.customerID = customerID;
 	}
 
 	public int getCardNumber() {
@@ -99,5 +92,13 @@ public class Payment {
 
 	public void setTime(Time time) {
 		this.time = time;
+	}
+
+	public Customer getCustomer() {
+		return customer;
+	}
+
+	public void setCustomer(Customer customer) {
+		this.customer = customer;
 	}
 }

@@ -43,39 +43,56 @@ public class CustomerDAO {
             }
         }
     }
-    public Customer getCustomer(String name) {
+    public void displayCustomers() {
         Connection connection = null;
         PreparedStatement preparedStatement = null;
         ResultSet resultSet = null;
-        Customer customer = new Customer();
 
         try {
             connection = Database.getConnection();
-            preparedStatement = connection.prepareStatement("SELECT * FROM customer WHERE name=?");
-            preparedStatement.setString(1, name);
+            preparedStatement = connection.prepareStatement("SELECT * FROM customer");
             resultSet = preparedStatement.executeQuery();
             ResultSetMetaData metaData = resultSet.getMetaData();
+            int numberOfColumns = metaData.getColumnCount();
+            System.out.println("Hotel -> Customer Table\n");
+
+            for(int i = 1; i <= 3; i++) {
+                System.out.printf("%-15s", metaData.getColumnName(i));
+            }
+            for(int i = 4; i < 5; i++) {
+                System.out.printf("%-30s", metaData.getColumnName(i));
+            }
+            for(int i = 5; i <= numberOfColumns; i++) {
+                System.out.printf("%-15s", metaData.getColumnName(i));
+            }
+            System.out.println();
+            for(int i = 1; i <= numberOfColumns; i++) {
+                System.out.print("-----------------");
+            }
+            System.out.println();
 
             while(resultSet.next()) {
-                customer.setCustomerID(resultSet.getInt(1));
-                customer.setName(resultSet.getString(2));
-                customer.setPhoneNumber(resultSet.getString(3));
-                customer.setEmail(resultSet.getString(4));
-                customer.setDateOfBirth(resultSet.getDate(5));
-                customer.setAddress(resultSet.getString(6));
+                for(int i = 1; i <= 3; i++) {
+                    System.out.printf("%-15s", resultSet.getObject(i));
+                }
+                for(int i = 4; i < 5; i++) {
+                    System.out.printf("%-30s", resultSet.getObject(i));
+                }
+                for(int i = 5; i <= numberOfColumns; i++) {
+                    System.out.printf("%-15s", resultSet.getObject(i));
+                }
             }
-        } catch (SQLException sqlException) {
+        } catch(SQLException sqlException) {
             sqlException.printStackTrace();
         } finally {
             try {
-                if(connection != null) connection.close();
-                if(preparedStatement != null) preparedStatement.close();
-                if(resultSet != null) resultSet.close();
-            } catch(Exception e) {
-                e.printStackTrace();
+                connection.close();
+                preparedStatement.close();
+                resultSet.close();
+            } catch(Exception exception) {
+                exception.printStackTrace();
             }
         }
-        return customer;
     }
     public void updateCustomer(Customer customer, String nameToUpdate) {
         Connection connection = null;
