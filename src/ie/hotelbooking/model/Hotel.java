@@ -1,7 +1,7 @@
 package ie.hotelbooking.model;
 
-import ie.hotelbooking.model.Information.Schedule;
-import ie.hotelbooking.model.Location.*;
+import ie.hotelbooking.model.information.Schedule;
+import ie.hotelbooking.model.location.*;
 
 /**
  *

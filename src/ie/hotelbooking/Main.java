@@ -1,10 +1,10 @@
 package ie.hotelbooking;
 
-import ie.hotelbooking.dao.CustomerDAO;
-import ie.hotelbooking.dao.PaymentDAO;
-import ie.hotelbooking.model.Customer.Customer;
-import ie.hotelbooking.model.Information.Payment;
-import ie.hotelbooking.model.Information.*;
+import ie.hotelbooking.controller.CustomerController;
+import ie.hotelbooking.controller.PaymentController;
+import ie.hotelbooking.model.customer.Customer;
+import ie.hotelbooking.model.information.Payment;
+
 import java.sql.Date;
 import java.sql.Time;
 
@@ -20,13 +20,13 @@ public class Main {
 
 		String nameToUpdate = "Donald Trump";
 
-		CustomerDAO customerDAO = new CustomerDAO();
+		CustomerController customerDAO = new CustomerController();
 		Customer customerOne = new Customer(name, phoneNumber, email, dateOfBirth, address);
 
 		customerDAO.displayCustomers();
 
 		Payment paymentOne = new Payment();
-		PaymentDAO paymentDAO = new PaymentDAO();
+		PaymentController paymentDAO = new PaymentController();
 		paymentOne.setCustomer(customerOne);
 		paymentOne.setCardHolderName("Donald Trump");
 		paymentOne.setCardNumber(0000);
