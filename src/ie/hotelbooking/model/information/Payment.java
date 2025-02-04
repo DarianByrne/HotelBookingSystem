@@ -19,8 +19,7 @@ public class Payment {
 
 	public Payment() {}
 
-	public Payment(int paymentID, int cardNumber, int cardCVV, Date cardExpiryDate, String cardHolderName, double amount, Date date, Time time, Customer customer) {
-		this.paymentID = paymentID;
+	public Payment(int cardNumber, int cardCVV, Date cardExpiryDate, String cardHolderName, double amount, Date date, Time time, Customer customer) {
 		this.customer = customer;
 		this.cardNumber = cardNumber;
 		this.cardCVV = cardCVV;
@@ -103,24 +102,16 @@ public class Payment {
 		this.customer = customer;
 	}
 
-	public void addPayment(Payment payment) {
+	public void addPayment() {
 		Connection connection = null;
 		PreparedStatement preparedStatement = null;
 
-		int customerID = payment.getCustomer().getCustomerID();
-		int cardNumber = payment.getCardNumber();
-		int cardCVV = payment.getCardCVV();
-		Date cardExpiryDate = payment.getCardExpiryDate();
-		String cardHolderName = payment.getCardHolderName();
-		double amount = payment.getAmount();
-		Date date = payment.getDate();
-		Time time = payment.getTime();
 		int i = 0;
 
 		try {
 			connection = Database.getConnection();
 			preparedStatement = connection.prepareStatement("INSERT INTO payment(customerID, cardNumber, cardCVV, cardExpiryDate, cardHolderName, amount, date, time) VALUES(?, ?, ?, ?, ?, ?, ?, ?)");
-			preparedStatement.setInt(1, customerID);
+			preparedStatement.setInt(1, customer.getCustomerID());
 			preparedStatement.setInt(2, cardNumber);
 			preparedStatement.setInt(3, cardCVV);
 			preparedStatement.setDate(4, cardExpiryDate);

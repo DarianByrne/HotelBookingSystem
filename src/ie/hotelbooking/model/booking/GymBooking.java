@@ -6,26 +6,13 @@ import ie.hotelbooking.model.gym.*;
  *
  */
 public class GymBooking extends Booking {
-
-	/**
-	 * Default constructor
-	 */
-	public GymBooking() {
-	}
-
-	/**
-	 *
-	 */
 	private GymSession gymSession;
+	private double duration;
+	private double rate;
 
-	/**
-	 *
-	 */
-	private float duration;
-
-	/**
-	 *
-	 */
-	private float rate;
-
+	public GymBooking(GymSession gymSession, double duration, double rate) {
+		this.gymSession = gymSession;
+		this.duration = duration;
+		this.rate = rate;
+	}
 }
