@@ -5,40 +5,29 @@ import com.github.lgooddatepicker.zinternaltools.DateChangeEvent;
 
 import javax.swing.*;
 
-public class ViewAvailability extends JFrame {
-	private final JPanel panel1;
+public class ViewAvailability extends JPanel {
 	private final JLabel label1;
 	private final DatePicker datePicker;
 	private final JLabel label2;
 
 	public ViewAvailability(String type) {
-		panel1 = new JPanel();
-		setContentPane(panel1);
-		setTitle("View Availability");
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setSize(800, 600);
-		setLocationRelativeTo(null);
-//		setLayout(new BoxLayout(panel1, BoxLayout.Y_AXIS));
+		MainMenu.frame.setTitle("View Availability");
+		MainMenu.frame.setContentPane(this);
+		updateUI();
 
 		label1 = new JLabel("View " + type + " Availability");
-		panel1.add(label1);
+		add(label1);
 
 		datePicker = new DatePicker();
 		datePicker.addDateChangeListener(this::dateChanged);
-		panel1.add(datePicker);
+		add(datePicker);
 
 		label2 = new JLabel("Select A Date");
-		panel1.add(label2);
-
-		setVisible(true);
+		add(label2);
 	}
 
 	public ViewAvailability() {
 		this("");
-	}
-
-	public static void main(String[] args) {
-		new ViewAvailability();
 	}
 
 	public void dateChanged(DateChangeEvent e) {

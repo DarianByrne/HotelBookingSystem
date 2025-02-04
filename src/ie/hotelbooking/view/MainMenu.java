@@ -1,10 +1,9 @@
 package ie.hotelbooking.view;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
-public class MainMenu extends JFrame {
+public class MainMenu {
+	public static JFrame frame = new JFrame("Hotel Booking System");
 	private JPanel panel1;
 	private JButton browseRoomsButton;
 	private JButton bookRoomButton;
@@ -18,73 +17,22 @@ public class MainMenu extends JFrame {
 	private JButton viewAvailabilityButton;
 
 	public MainMenu() {
-		setContentPane(panel1);
-		setTitle("Hotel Booking System");
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setSize(800, 600);
-		setLocationRelativeTo(null);
-		setVisible(true);
+		frame.setContentPane(panel1);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setSize(800, 600);
+		frame.setLocationRelativeTo(null);
+		frame.setVisible(true);
 
-		browseRoomsButton.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				JOptionPane.showMessageDialog(MainMenu.this, "Browse Rooms", "Browse Rooms", JOptionPane.PLAIN_MESSAGE);
-			}
-		});
-		bookRoomButton.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				JOptionPane.showMessageDialog(MainMenu.this, "Book Room", "Book Room", JOptionPane.PLAIN_MESSAGE);
-			}
-		});
-		reserveTableButton.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				JOptionPane.showMessageDialog(MainMenu.this, "Reserve Table", "Reserve Table", JOptionPane.PLAIN_MESSAGE);
-			}
-		});
-		bookGymButton.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				JOptionPane.showMessageDialog(MainMenu.this, "Book Gym", "Book Gym", JOptionPane.PLAIN_MESSAGE);
-			}
-		});
-		purchasePassButton.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				JOptionPane.showMessageDialog(MainMenu.this, "Purchase Pass", "Purchase Pass", JOptionPane.PLAIN_MESSAGE);
-			}
-		});
-		bookSpaButton.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				JOptionPane.showMessageDialog(MainMenu.this, "Book Spa", "Book Spa", JOptionPane.PLAIN_MESSAGE);
-			}
-		});
-		bookWeddingButton.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				JOptionPane.showMessageDialog(MainMenu.this, "Book Wedding", "Book Wedding", JOptionPane.PLAIN_MESSAGE);
-			}
-		});
-		bookConferenceButton.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				JOptionPane.showMessageDialog(MainMenu.this, "Book Conference", "Book Conference", JOptionPane.PLAIN_MESSAGE);
-			}
-		});
-		viewMenuButton.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				JOptionPane.showMessageDialog(MainMenu.this, "View Menu", "View Menu", JOptionPane.PLAIN_MESSAGE);
-			}
-		});
-		viewAvailabilityButton.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				JOptionPane.showMessageDialog(MainMenu.this, "View Availability", "View Availability", JOptionPane.PLAIN_MESSAGE);
-			}
-		});
+		browseRoomsButton.addActionListener(e -> new BrowseRooms());
+		bookRoomButton.addActionListener(e -> JOptionPane.showMessageDialog(MainMenu.frame, "Book Room", "Book Room", JOptionPane.PLAIN_MESSAGE));
+		reserveTableButton.addActionListener(e -> JOptionPane.showMessageDialog(MainMenu.frame, "Reserve Table", "Reserve Table", JOptionPane.PLAIN_MESSAGE));
+		bookGymButton.addActionListener(e -> JOptionPane.showMessageDialog(MainMenu.frame, "Book Gym", "Book Gym", JOptionPane.PLAIN_MESSAGE));
+		purchasePassButton.addActionListener(e -> JOptionPane.showMessageDialog(MainMenu.frame, "Purchase Pass", "Purchase Pass", JOptionPane.PLAIN_MESSAGE));
+		bookSpaButton.addActionListener(e -> JOptionPane.showMessageDialog(MainMenu.frame, "Book Spa", "Book Spa", JOptionPane.PLAIN_MESSAGE));
+		bookWeddingButton.addActionListener(e -> JOptionPane.showMessageDialog(MainMenu.frame, "Book Wedding", "Book Wedding", JOptionPane.PLAIN_MESSAGE));
+		bookConferenceButton.addActionListener(e -> JOptionPane.showMessageDialog(MainMenu.frame, "Book Conference", "Book Conference", JOptionPane.PLAIN_MESSAGE));
+		viewMenuButton.addActionListener(e -> JOptionPane.showMessageDialog(MainMenu.frame, "View Menu", "View Menu", JOptionPane.PLAIN_MESSAGE));
+		viewAvailabilityButton.addActionListener(e -> new ViewAvailability());
 	}
 
 	public static void main(String[] args) {
