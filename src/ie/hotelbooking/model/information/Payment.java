@@ -7,6 +7,7 @@ import java.sql.*;
 
 public class Payment {
 	private int paymentID;
+	static int paymentIDCounter = 0;
 	private int customerID;
 	private int cardNumber;
 	private int cardCVV;
@@ -17,11 +18,14 @@ public class Payment {
 	private Time time;
 	private Customer customer;
 
-	public Payment() {}
+	public Payment() {
+		setPaymentID();
+	}
 
-	public Payment(int paymentID, int cardNumber, int cardCVV, Date cardExpiryDate, String cardHolderName, double amount, Date date, Time time, Customer customer) {
-		this.paymentID = paymentID;
+	public Payment(int cardNumber, int cardCVV, Date cardExpiryDate, String cardHolderName, double amount, Date date, Time time, Customer customer) {
+		setPaymentID();
 		this.customer = customer;
+		customerID = customer.getCustomerID();
 		this.cardNumber = cardNumber;
 		this.cardCVV = cardCVV;
 		this.cardExpiryDate = cardExpiryDate;
@@ -35,8 +39,17 @@ public class Payment {
 		return paymentID;
 	}
 
-	public void setPaymentID(int paymentID) {
-		this.paymentID = paymentID;
+	public void setPaymentID() {
+		paymentIDCounter++;
+		paymentID = paymentIDCounter;
+	}
+
+	public int getCustomerID() {
+		return customerID;
+	}
+
+	public void setCustomerID() {
+		customerID = customer.getCustomerID();
 	}
 
 	public int getCardNumber() {
@@ -175,8 +188,8 @@ public class Payment {
 			sqlException.printStackTrace();
 		} finally {
 			try {
-				connection.close();
-				preparedStatement.close();
+				if(connection != null) connection.close();
+				if(preparedStatement != null) preparedStatement.close();
 			} catch(Exception e) {
 				e.printStackTrace();
 			}
@@ -200,8 +213,8 @@ public class Payment {
 			sqlException.printStackTrace();
 		} finally {
 			try {
-				connection.close();
-				preparedStatement.close();
+				if(connection != null) connection.close();
+				if(preparedStatement != null) preparedStatement.close();
 			} catch(Exception e) {
 				e.printStackTrace();
 			}

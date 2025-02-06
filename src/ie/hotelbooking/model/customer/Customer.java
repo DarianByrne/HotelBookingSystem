@@ -5,6 +5,7 @@ import ie.hotelbooking.model.Database;
 import java.sql.*;
 
 public class Customer {
+	static int customerIDCounter = 0;
 	private int customerID;
 	private String name;
 	private String phoneNumber;
@@ -12,9 +13,12 @@ public class Customer {
 	private Date dateOfBirth;
 	private String address;
 
-	public Customer() {}
+	public Customer() {
+		setCustomerID();
+	}
 
 	public Customer(String name, String phoneNumber, String email, Date dateOfBirth, String address) {
+		setCustomerID();
 		this.name = name;
 		this.phoneNumber = phoneNumber;
 		this.email = email;
@@ -25,8 +29,9 @@ public class Customer {
 	public int getCustomerID() {
 		return customerID;
 	}
-	public void setCustomerID(int customerID) {
-		this.customerID = customerID;
+	public void setCustomerID() {
+		customerIDCounter++;
+		customerID = customerIDCounter;
 	}
 	public String getName() {
 		return name;
@@ -87,8 +92,8 @@ public class Customer {
 			sqlException.printStackTrace();
 		} finally {
 			try {
-				preparedStatement.close();
-				connection.close();
+				if(preparedStatement != null) preparedStatement.close();
+				if(connection != null) connection.close();
 			} catch(Exception exception) {
 				exception.printStackTrace();
 			}
@@ -115,8 +120,8 @@ public class Customer {
 			sqlException.printStackTrace();
 		} finally {
 			try {
-				connection.close();
-				preparedStatement.close();
+				if(connection != null) connection.close();
+				if(preparedStatement != null) preparedStatement.close();
 			} catch(Exception e) {
 				e.printStackTrace();
 			}
@@ -127,6 +132,7 @@ public class Customer {
 	{
 		Connection connection = null;
 		PreparedStatement preparedStatement = null;
+		int customerID = getCustomerID();
 		int i = 0;
 
 		try {
@@ -139,8 +145,8 @@ public class Customer {
 			sqlException.printStackTrace();
 		} finally {
 			try {
-				preparedStatement.close();
-				connection.close();
+				if(preparedStatement != null) preparedStatement.close();
+				if(connection != null) connection.close();
 			} catch(Exception exception) {
 				exception.printStackTrace();
 			}
