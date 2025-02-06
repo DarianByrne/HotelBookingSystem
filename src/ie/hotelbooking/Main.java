@@ -1,22 +1,15 @@
 package ie.hotelbooking;
 
+import ie.hotelbooking.controller.CustomerController;
+import ie.hotelbooking.controller.PaymentController;
 import ie.hotelbooking.model.customer.Customer;
+import ie.hotelbooking.model.information.Payment;
 
 import java.sql.Date;
-
-import ie.hotelbooking.view.*;
+import java.sql.Time;
 
 public class Main {
 	public static void main(String[] args) {
-		System.out.println("Hello world!");
 
-		String name = "Mick Phelan";
-		String phoneNumber = "086-1602798";
-		String email = "mick.phelan@gmail.com";
-		Date dateOfBirth = Date.valueOf("2000-10-10");
-		String address = "Cork";
-		Customer customerOne = new Customer(name, phoneNumber, email, dateOfBirth, address);
-		ViewCustomers.displayCustomers();
-		ViewPayments.displayPayments();
 	}
 }
