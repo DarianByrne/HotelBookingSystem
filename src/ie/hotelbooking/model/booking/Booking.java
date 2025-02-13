@@ -11,6 +11,7 @@ import ie.hotelbooking.model.information.Payment;
 import ie.hotelbooking.model.customer.Customer;
 
 public class Booking {
+    
     private int bookingID;
     private static int bookingIDCounter = 0;
     private int paymentID;
