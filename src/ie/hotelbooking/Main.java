@@ -1,11 +1,11 @@
 package ie.hotelbooking;
 
-import ie.hotelbooking.controller.CustomerController;
-import ie.hotelbooking.controller.PaymentController;
 import ie.hotelbooking.model.booking.Booking;
 import ie.hotelbooking.model.customer.Customer;
 import ie.hotelbooking.model.information.Payment;
-
+import ie.hotelbooking.view.MainMenu;
+import javax.swing.*;
+import java.awt.*;
 import java.sql.Date;
 import java.sql.Time;
 import java.time.LocalDate;
@@ -13,7 +13,16 @@ import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
 
 public class Main {
+	public static JFrame frame = new JFrame("Hotel Booking System");
+
 	public static void main(String[] args) {
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setSize(800, 600);
+		frame.setLocationRelativeTo(null);
+		frame.setVisible(true);
+		frame.setLayout(new FlowLayout(FlowLayout.CENTER));
+		new MainMenu();
+
 		LocalDate today = LocalDate.now();
 		LocalTime time = LocalTime.now().truncatedTo(ChronoUnit.MINUTES);
 

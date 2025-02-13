@@ -1,6 +1,4 @@
-package ie.hotelbooking.view;
-
-import ie.hotelbooking.model.booking.Booking;
+package ie.hotelbooking.view.archive;
 
 public class ViewBookings {
     private ViewBookings() {}

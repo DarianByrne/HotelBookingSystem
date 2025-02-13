@@ -3,6 +3,7 @@ package ie.hotelbooking.view;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ItemEvent;
+import static ie.hotelbooking.Main.frame;
 
 public class BrowseRooms extends JPanel {
 	private final JLabel label1;
@@ -11,8 +12,8 @@ public class BrowseRooms extends JPanel {
 	private final JButton viewAvailabilityButton;
 
 	public BrowseRooms() {
-		MainMenu.frame.setTitle("Browse Rooms");
-		MainMenu.frame.setContentPane(this);
+		frame.setTitle("Browse Rooms");
+		frame.setContentPane(this);
 		updateUI();
 
 		label1 = new JLabel("Select a room type");
