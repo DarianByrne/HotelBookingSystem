@@ -3,38 +3,47 @@ package ie.hotelbooking.model.booking;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.sql.Time;
+import java.sql.Date;
 
 import ie.hotelbooking.model.Database;
 import ie.hotelbooking.model.information.Payment;
 import ie.hotelbooking.model.customer.Customer;
 
 public class Booking {
-    static int bookingIDCounter = 0;
-    private final int bookingID;
-    private final int paymentID;
-    private final int customerID;
-    private Payment payment;
+    
+    private int bookingID;
+    private static int bookingIDCounter = 0;
+    private int paymentID;
+    private int customerID;
     private Customer customer;
+    private Date arrivalDate;
+    private Time arrivalTime;
+    private Date departureDate;
+    private Time departureTime;
+    private Payment payment;
 
     public Booking() {
-        this.bookingID = setBookingID();
-        this.paymentID = 0;
-        this.customerID = 0;
+        setBookingID();
     }
 
-    public Booking(Payment payment, Customer customer) {
-        this.bookingID = setBookingID();
-        this.payment = payment;
-        this.customer = customer;
-        this.customerID = setCustomerID();
-        this.paymentID = setPaymentID();
+    public Booking(Customer customer, Date arrivalDate, Time arrivalTime, Date departureDate, Time departureTime, Payment payment) {
+        setBookingID();
+        setCustomer(customer);
+        setArrivalDate(arrivalDate);
+        setArrivalTime(arrivalTime);
+        setDepartureDate(departureDate);
+        setDepartureTime(departureTime);
+        setPayment(payment);
+        setPaymentID();
+        setCustomerID();
     }
 
     public int getBookingID() {
         return bookingID;
     }
-    public int setBookingID() {
-        return bookingIDCounter++;
+    public void setBookingID() {
+        bookingID = bookingIDCounter++;
     }
     public int getPaymentID() {
         return paymentID;
@@ -42,46 +51,68 @@ public class Booking {
     public int getCustomerID() {
         return customerID;
     }
-    public int setPaymentID() {
-        return payment.getPaymentID();
+    public void setCustomerID() {
+        customerID = customer.getCustomerID();
     }
-    public int setCustomerID() {
-        return customer.getCustomerID();
-    }
-    public Payment getPayment() {
-        return payment;
+    public void setPaymentID() {
+        paymentID = payment.getPaymentID();
     }
     public Customer getCustomer() {
         return customer;
     }
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
+    }
+    public Payment getPayment() {
+        return payment;
+    }
     public void setPayment(Payment payment) {
         this.payment = payment;
     }
-    public void setCustomer(Customer customer) {
-        this.customer = customer;
+    public Date getArrivalDate() {
+        return arrivalDate;
+    }
+    public void setArrivalDate(Date arrivalDate) {
+        this.arrivalDate = arrivalDate;
+    }
+    public Time getArrivalTime() {
+        return arrivalTime;
+    }
+    public void setArrivalTime(Time arrivalTime) {
+        this.arrivalTime = arrivalTime;
+    }
+    public Date getDepartureDate() {
+        return departureDate;
+    }
+    public void setDepartureDate(Date departureDate) {
+        this.departureDate = departureDate;
+    }
+    public Time getDepartureTime() {
+        return departureTime;
+    }
+    public void setDepartureTime(Time departureTime) {
+        this.departureTime = departureTime;
     }
 
     public void addBooking() {
         Connection connection = null;
         PreparedStatement preparedStatement = null;
 
-        int paymentID = getPaymentID();
-        int customerID = getCustomerID();
         int i = 0;
 
         try {
             connection = Database.getConnection();
             preparedStatement = connection.prepareStatement("INSERT INTO booking(paymentID, customerID) VALUES(?, ?)");
-            preparedStatement.setInt(1, paymentID);
-            preparedStatement.setInt(2, customerID);
+            preparedStatement.setInt(1, payment.getPaymentID());
+            preparedStatement.setInt(2, customer.getCustomerID());
             i = preparedStatement.executeUpdate();
-            System.out.println(i + " record successfully inserted into booking database");
+            System.out.println(i + " record successfully added to the booking table");
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
             try {
-                if(connection != null) connection.close();
-                if(preparedStatement != null) preparedStatement.close();
+                connection.close();
+                preparedStatement.close();
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -90,25 +121,22 @@ public class Booking {
     public void updateBooking() {
         Connection connection = null;
         PreparedStatement preparedStatement = null;
-
-        int paymentID = getPaymentID();
-        int customerID = getCustomerID();
         int i = 0;
 
         try {
             connection = Database.getConnection();
-            preparedStatement = connection.prepareStatement("UPDATE booking SET paymentID=? customerID=? WHERE bookingID=?");
-            preparedStatement.setInt(1, paymentID);
-            preparedStatement.setInt(2, customerID);
-            preparedStatement.setInt(3, bookingID);
+            preparedStatement = connection.prepareStatement("UPDATE booking SET paymentID=?, customerID=? WHERE bookingID=?");
+            preparedStatement.setInt(1, getPaymentID());
+            preparedStatement.setInt(2, getCustomerID());
+            preparedStatement.setInt(3, getBookingID());
             i = preparedStatement.executeUpdate();
-            System.out.println(i + " record successfully updated into booking database");
+            System.out.println(i + " record successfully updated to the booking table");
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
             try {
-                if(connection != null) connection.close();
-                if(preparedStatement != null) preparedStatement.close();
+                connection.close();
+                preparedStatement.close();
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -117,22 +145,20 @@ public class Booking {
     public void deleteBooking() {
         Connection connection = null;
         PreparedStatement preparedStatement = null;
-
-        int bookingID = getBookingID();
         int i = 0;
 
         try {
             connection = Database.getConnection();
             preparedStatement = connection.prepareStatement("DELETE FROM booking WHERE bookingID=?");
-            preparedStatement.setInt(1, bookingID);
+            preparedStatement.setInt(1, getBookingID());
             i = preparedStatement.executeUpdate();
-            System.out.println(i + " record successfully deleted into booking database");
+            System.out.println(i + " record successfully deleted to the booking table");
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
             try {
-                if(connection != null) connection.close();
-                if(preparedStatement != null) preparedStatement.close();
+                connection.close();
+                preparedStatement.close();
             } catch (Exception e) {
                 e.printStackTrace();
             }
