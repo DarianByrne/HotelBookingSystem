@@ -6,21 +6,10 @@ import ie.hotelbooking.model.restaurant.*;
  *
  */
 public class RestaurantReservation extends Booking {
-
-	/**
-	 * Default constructor
-	 */
-	public RestaurantReservation() {
-	}
-
-	/**
-	 *
-	 */
 	private Table table;
-
-	/**
-	 *
-	 */
 	private int numberOfPeople;
 
+	public RestaurantReservation(Table table, int numberOfPeople) {
+
+	}
 }

@@ -5,8 +5,8 @@ import ie.hotelbooking.model.Database;
 import java.sql.*;
 
 public class Customer {
-	static int customerIDCounter = 0;
-	private final int customerID;
+	private int customerID;
+	private static int customerIDCounter = 0;
 	private String name;
 	private String phoneNumber;
 	private String email;
@@ -14,11 +14,11 @@ public class Customer {
 	private String address;
 
 	public Customer() {
-        this.customerID = setCustomerID();
+		setCustomerID();
 	}
 
-	public Customer(int customerID, String name, String phoneNumber, String email, Date dateOfBirth, String address) {
-        this.customerID = setCustomerID();
+	public Customer(String name, String phoneNumber, String email, Date dateOfBirth, String address) {
+		setCustomerID();
 		this.name = name;
 		this.phoneNumber = phoneNumber;
 		this.email = email;
@@ -29,8 +29,8 @@ public class Customer {
 	public int getCustomerID() {
 		return customerID;
 	}
-	public int setCustomerID() {
-		return customerIDCounter++;
+	public void setCustomerID() {
+		customerID = customerIDCounter++;
 	}
 	public String getName() {
 		return name;
@@ -91,8 +91,8 @@ public class Customer {
 			sqlException.printStackTrace();
 		} finally {
 			try {
-				if(preparedStatement != null) preparedStatement.close();
-				if(connection != null) connection.close();
+				preparedStatement.close();
+				connection.close();
 			} catch(Exception exception) {
 				exception.printStackTrace();
 			}
@@ -119,8 +119,8 @@ public class Customer {
 			sqlException.printStackTrace();
 		} finally {
 			try {
-				if(connection != null) connection.close();
-				if(preparedStatement != null) preparedStatement.close();
+				connection.close();
+				preparedStatement.close();
 			} catch(Exception e) {
 				e.printStackTrace();
 			}
@@ -131,7 +131,6 @@ public class Customer {
 	{
 		Connection connection = null;
 		PreparedStatement preparedStatement = null;
-		int customerID = getCustomerID();
 		int i = 0;
 
 		try {
@@ -144,8 +143,8 @@ public class Customer {
 			sqlException.printStackTrace();
 		} finally {
 			try {
-				if(preparedStatement != null) preparedStatement.close();
-				if(connection != null) connection.close();
+				preparedStatement.close();
+				connection.close();
 			} catch(Exception exception) {
 				exception.printStackTrace();
 			}

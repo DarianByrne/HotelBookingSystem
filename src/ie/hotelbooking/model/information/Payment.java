@@ -6,9 +6,9 @@ import ie.hotelbooking.model.customer.*;
 import java.sql.*;
 
 public class Payment {
-	private final int paymentID;
-	static int paymentIDCounter = 0;
-	private final int customerID;
+	private int paymentID;
+	private static int paymentIDCounter = 0;
+	private int customerID;
 	private int cardNumber;
 	private int cardCVV;
 	private Date cardExpiryDate;
@@ -19,14 +19,12 @@ public class Payment {
 	private Customer customer;
 
 	public Payment() {
-		this.paymentID = setPaymentID();
-		this.customerID = 0;
+		setPaymentID();
 	}
 
 	public Payment(int cardNumber, int cardCVV, Date cardExpiryDate, String cardHolderName, double amount, Date date, Time time, Customer customer) {
+		setPaymentID();
 		this.customer = customer;
-		customerID = customer.getCustomerID();
-		paymentID = setPaymentID();
 		this.cardNumber = cardNumber;
 		this.cardCVV = cardCVV;
 		this.cardExpiryDate = cardExpiryDate;
@@ -34,22 +32,15 @@ public class Payment {
 		this.amount = amount;
 		this.date = date;
 		this.time = time;
+		customerID = customer.getCustomerID();
 	}
 
 	public int getPaymentID() {
 		return paymentID;
 	}
 
-	public int setPaymentID() {
-		return paymentIDCounter++;
-	}
-
-	public int getCustomerID() {
-		return customerID;
-	}
-
-	public int setCustomerID() {
-		return customer.getCustomerID();
+	public void setPaymentID() {
+		paymentID = paymentIDCounter++;
 	}
 
 	public int getCardNumber() {
@@ -120,20 +111,12 @@ public class Payment {
 		Connection connection = null;
 		PreparedStatement preparedStatement = null;
 
-		int customerID = customer.getCustomerID();
-		int cardNumber = getCardNumber();
-		int cardCVV = getCardCVV();
-		Date cardExpiryDate = getCardExpiryDate();
-		String cardHolderName = getCardHolderName();
-		double amount = getAmount();
-		Date date = getDate();
-		Time time = getTime();
 		int i = 0;
 
 		try {
 			connection = Database.getConnection();
 			preparedStatement = connection.prepareStatement("INSERT INTO payment(customerID, cardNumber, cardCVV, cardExpiryDate, cardHolderName, amount, date, time) VALUES(?, ?, ?, ?, ?, ?, ?, ?)");
-			preparedStatement.setInt(1, customerID);
+			preparedStatement.setInt(1, customer.getCustomerID());
 			preparedStatement.setInt(2, cardNumber);
 			preparedStatement.setInt(3, cardCVV);
 			preparedStatement.setDate(4, cardExpiryDate);
@@ -157,7 +140,7 @@ public class Payment {
 
 
 
-	public void updatePayment() {
+	public void updatePayment(int paymentID) {
 		Connection connection = null;
 		PreparedStatement preparedStatement = null;
 
@@ -173,7 +156,7 @@ public class Payment {
 
 		try {
 			connection = Database.getConnection();
-			preparedStatement = connection.prepareStatement("UPDATE payment SET customerID=?, cardNumber=?, cardCVV=?, cardExpiryDate=?, cardHolderName=?, amount=?, date=?, time=? WHERE customerID=?");
+			preparedStatement = connection.prepareStatement("UPDATE payment SET customerID=?, cardNumber=?, cardCVV=?, cardExpiryDate=?, cardHolderName=?, amount=?, date=?, time=? WHERE paymentID=?");
 			preparedStatement.setInt(1, customerID);
 			preparedStatement.setInt(2, cardNumber);
 			preparedStatement.setInt(3, cardCVV);
@@ -182,40 +165,38 @@ public class Payment {
 			preparedStatement.setDouble(6, amount);
 			preparedStatement.setDate(7, date);
 			preparedStatement.setTime(8, time);
-			preparedStatement.setInt(9, customerID);
+			preparedStatement.setInt(9, paymentID);
 			i = preparedStatement.executeUpdate();
 			System.out.println(i + " record successfully updated in the payment table");
 		} catch(SQLException sqlException) {
 			sqlException.printStackTrace();
 		} finally {
 			try {
-				if(connection != null) connection.close();
-				if(preparedStatement != null) preparedStatement.close();
+				connection.close();
+				preparedStatement.close();
 			} catch(Exception e) {
 				e.printStackTrace();
 			}
 		}
 	}
 
-	public void deletePayment(Payment payment) {
+	public void deletePayment() {
 		Connection connection = null;
 		PreparedStatement preparedStatement = null;
-
-		int paymentID = payment.getPaymentID();
 		int i = 0;
 
 		try {
 			connection = Database.getConnection();
 			preparedStatement = connection.prepareStatement("DELETE FROM payment WHERE paymentID=?");
-			preparedStatement.setInt(1, paymentID);
+			preparedStatement.setInt(1, getPaymentID());
 			i = preparedStatement.executeUpdate();
 			System.out.println(i + " record successfully deleted from the payment table");
 		} catch(SQLException sqlException) {
 			sqlException.printStackTrace();
 		} finally {
 			try {
-				if(connection != null) connection.close();
-				if(preparedStatement != null) preparedStatement.close();
+				connection.close();
+				preparedStatement.close();
 			} catch(Exception e) {
 				e.printStackTrace();
 			}
