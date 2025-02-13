@@ -140,19 +140,18 @@ public class Payment {
 
 
 
-	public void updatePayment(Payment payment) {
+	public void updatePayment(int paymentID) {
 		Connection connection = null;
 		PreparedStatement preparedStatement = null;
 
-		int customerID = payment.getCustomer().getCustomerID();
-		int cardNumber = payment.getCardNumber();
-		int cardCVV = payment.getCardCVV();
-		Date cardExpiryDate = payment.getCardExpiryDate();
-		String cardHolderName = payment.getCardHolderName();
-		double amount = payment.getAmount();
-		Date date = payment.getDate();
-		Time time = payment.getTime();
-		int paymentID = payment.getPaymentID();
+		int customerID = customer.getCustomerID();
+		int cardNumber = getCardNumber();
+		int cardCVV = getCardCVV();
+		Date cardExpiryDate = getCardExpiryDate();
+		String cardHolderName = getCardHolderName();
+		double amount = getAmount();
+		Date date = getDate();
+		Time time = getTime();
 		int i = 0;
 
 		try {
@@ -181,17 +180,15 @@ public class Payment {
 		}
 	}
 
-	public void deletePayment(Payment payment) {
+	public void deletePayment() {
 		Connection connection = null;
 		PreparedStatement preparedStatement = null;
-
-		int paymentID = payment.getPaymentID();
 		int i = 0;
 
 		try {
 			connection = Database.getConnection();
 			preparedStatement = connection.prepareStatement("DELETE FROM payment WHERE paymentID=?");
-			preparedStatement.setInt(1, paymentID);
+			preparedStatement.setInt(1, getPaymentID());
 			i = preparedStatement.executeUpdate();
 			System.out.println(i + " record successfully deleted from the payment table");
 		} catch(SQLException sqlException) {

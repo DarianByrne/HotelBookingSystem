@@ -1,6 +1,10 @@
 package ie.hotelbooking.model.booking;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.sql.Time;
+import java.sql.Date;
 
 import ie.hotelbooking.model.Database;
 import ie.hotelbooking.model.information.Payment;
