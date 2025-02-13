@@ -7,6 +7,7 @@ import java.sql.*;
 
 public class Payment {
 	private int paymentID;
+	private static int paymentIDCounter = 0;
 	private int customerID;
 	private int cardNumber;
 	private int cardCVV;
@@ -17,9 +18,12 @@ public class Payment {
 	private Time time;
 	private Customer customer;
 
-	public Payment() {}
+	public Payment() {
+		setPaymentID();
+	}
 
 	public Payment(int cardNumber, int cardCVV, Date cardExpiryDate, String cardHolderName, double amount, Date date, Time time, Customer customer) {
+		setPaymentID();
 		this.customer = customer;
 		this.cardNumber = cardNumber;
 		this.cardCVV = cardCVV;
@@ -28,14 +32,15 @@ public class Payment {
 		this.amount = amount;
 		this.date = date;
 		this.time = time;
+		customerID = customer.getCustomerID();
 	}
 
 	public int getPaymentID() {
 		return paymentID;
 	}
 
-	public void setPaymentID(int paymentID) {
-		this.paymentID = paymentID;
+	public void setPaymentID() {
+		paymentID = paymentIDCounter++;
 	}
 
 	public int getCardNumber() {
@@ -147,11 +152,12 @@ public class Payment {
 		double amount = payment.getAmount();
 		Date date = payment.getDate();
 		Time time = payment.getTime();
+		int paymentID = payment.getPaymentID();
 		int i = 0;
 
 		try {
 			connection = Database.getConnection();
-			preparedStatement = connection.prepareStatement("UPDATE payment SET customerID=?, cardNumber=?, cardCVV=?, cardExpiryDate=?, cardHolderName=?, amount=?, date=?, time=?");
+			preparedStatement = connection.prepareStatement("UPDATE payment SET customerID=?, cardNumber=?, cardCVV=?, cardExpiryDate=?, cardHolderName=?, amount=?, date=?, time=? WHERE paymentID=?");
 			preparedStatement.setInt(1, customerID);
 			preparedStatement.setInt(2, cardNumber);
 			preparedStatement.setInt(3, cardCVV);
@@ -160,6 +166,7 @@ public class Payment {
 			preparedStatement.setDouble(6, amount);
 			preparedStatement.setDate(7, date);
 			preparedStatement.setTime(8, time);
+			preparedStatement.setInt(9, paymentID);
 			i = preparedStatement.executeUpdate();
 			System.out.println(i + " record successfully updated in the payment table");
 		} catch(SQLException sqlException) {

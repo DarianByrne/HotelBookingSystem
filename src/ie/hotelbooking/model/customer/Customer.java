@@ -6,15 +6,19 @@ import java.sql.*;
 
 public class Customer {
 	private int customerID;
+	private static int customerIDCounter = 0;
 	private String name;
 	private String phoneNumber;
 	private String email;
 	private Date dateOfBirth;
 	private String address;
 
-	public Customer() {}
+	public Customer() {
+		setCustomerID();
+	}
 
 	public Customer(String name, String phoneNumber, String email, Date dateOfBirth, String address) {
+		setCustomerID();
 		this.name = name;
 		this.phoneNumber = phoneNumber;
 		this.email = email;
@@ -25,8 +29,8 @@ public class Customer {
 	public int getCustomerID() {
 		return customerID;
 	}
-	public void setCustomerID(int customerID) {
-		this.customerID = customerID;
+	public void setCustomerID() {
+		customerID = customerIDCounter++;
 	}
 	public String getName() {
 		return name;

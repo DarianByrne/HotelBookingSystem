@@ -2,14 +2,26 @@ package ie.hotelbooking.model.booking;
 
 import ie.hotelbooking.model.location.*;
 
+import java.sql.Time;
+import java.sql.Date;
+
 /**
  *
  */
 public class ConferenceBooking extends Booking {
+	private int bookingID;
+	private Booking booking;
 	private Venue venue;
-	private int numberOfPeople;
+	private String venueName;
+	private Date arrivalDate;
+	private Time arrivalTime;
+	private Time departureTime;
+	private int numberOfAttendees;
 	private String eventType;
-	private float rate;
+
+	public ConferenceBooking() {}
+
+	public ConferenceBooking() {}
 
 	public void addConferenceBooking(ConferenceBooking conferenceBooking) {}
 	public ConferenceBooking getConferenceBooking(ConferenceBooking conferenceBooking) {
