@@ -12,20 +12,24 @@ public class Booking {
     private int paymentID;
     private int customerID;
     private Customer customer;
-    private Date date;
-    private Time time;
+    private Date arrivalDate;
+    private Time arrivalTime;
+    private Date departureDate;
+    private Time departureTime;
     private Payment payment;
 
     public Booking() {
         setBookingID();
     }
 
-    public Booking(Customer customer, Date date, Time time, Payment payment) {
+    public Booking(Customer customer, Date arrivalDate, Time arrivalTime, Date departureDate, Time departureTime, Payment payment) {
         setBookingID();
-        this.customer = customer;
-        this.date = date;
-        this.time = time;
-        this.payment = payment;
+        setCustomer(customer);
+        setArrivalDate(arrivalDate);
+        setArrivalTime(arrivalTime);
+        setDepartureDate(departureDate);
+        setDepartureTime(departureTime);
+        setPayment(payment);
         setPaymentID();
         setCustomerID();
     }
@@ -54,17 +58,35 @@ public class Booking {
     public void setCustomer(Customer customer) {
         this.customer = customer;
     }
-    public Date getDate() {
-        return date;
+    public Payment getPayment() {
+        return payment;
     }
-    public void setDate(Date date) {
-        this.date = date;
+    public void setPayment(Payment payment) {
+        this.payment = payment;
     }
-    public Time getTime() {
-        return time;
+    public Date getArrivalDate() {
+        return arrivalDate;
     }
-    public void setTime(Time time) {
-        this.time = time;
+    public void setArrivalDate(Date arrivalDate) {
+        this.arrivalDate = arrivalDate;
+    }
+    public Time getArrivalTime() {
+        return arrivalTime;
+    }
+    public void setArrivalTime(Time arrivalTime) {
+        this.arrivalTime = arrivalTime;
+    }
+    public Date getDepartureDate() {
+        return departureDate;
+    }
+    public void setDepartureDate(Date departureDate) {
+        this.departureDate = departureDate;
+    }
+    public Time getDepartureTime() {
+        return departureTime;
+    }
+    public void setDepartureTime(Time departureTime) {
+        this.departureTime = departureTime;
     }
 
     public void addBooking() {
