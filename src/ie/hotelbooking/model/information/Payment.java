@@ -6,9 +6,9 @@ import ie.hotelbooking.model.customer.*;
 import java.sql.*;
 
 public class Payment {
-	private int paymentID;
+	private final int paymentID;
 	static int paymentIDCounter = 0;
-	private int customerID;
+	private final int customerID;
 	private int cardNumber;
 	private int cardCVV;
 	private Date cardExpiryDate;
@@ -19,13 +19,14 @@ public class Payment {
 	private Customer customer;
 
 	public Payment() {
-		setPaymentID();
+		this.paymentID = setPaymentID();
+		this.customerID = 0;
 	}
 
 	public Payment(int cardNumber, int cardCVV, Date cardExpiryDate, String cardHolderName, double amount, Date date, Time time, Customer customer) {
-		setPaymentID();
 		this.customer = customer;
 		customerID = customer.getCustomerID();
+		paymentID = setPaymentID();
 		this.cardNumber = cardNumber;
 		this.cardCVV = cardCVV;
 		this.cardExpiryDate = cardExpiryDate;
@@ -39,17 +40,16 @@ public class Payment {
 		return paymentID;
 	}
 
-	public void setPaymentID() {
-		paymentIDCounter++;
-		paymentID = paymentIDCounter;
+	public int setPaymentID() {
+		return paymentIDCounter++;
 	}
 
 	public int getCustomerID() {
 		return customerID;
 	}
 
-	public void setCustomerID() {
-		customerID = customer.getCustomerID();
+	public int setCustomerID() {
+		return customer.getCustomerID();
 	}
 
 	public int getCardNumber() {
@@ -116,18 +116,18 @@ public class Payment {
 		this.customer = customer;
 	}
 
-	public void addPayment(Payment payment) {
+	public void addPayment() {
 		Connection connection = null;
 		PreparedStatement preparedStatement = null;
 
-		int customerID = payment.getCustomer().getCustomerID();
-		int cardNumber = payment.getCardNumber();
-		int cardCVV = payment.getCardCVV();
-		Date cardExpiryDate = payment.getCardExpiryDate();
-		String cardHolderName = payment.getCardHolderName();
-		double amount = payment.getAmount();
-		Date date = payment.getDate();
-		Time time = payment.getTime();
+		int customerID = customer.getCustomerID();
+		int cardNumber = getCardNumber();
+		int cardCVV = getCardCVV();
+		Date cardExpiryDate = getCardExpiryDate();
+		String cardHolderName = getCardHolderName();
+		double amount = getAmount();
+		Date date = getDate();
+		Time time = getTime();
 		int i = 0;
 
 		try {
@@ -157,23 +157,23 @@ public class Payment {
 
 
 
-	public void updatePayment(Payment payment) {
+	public void updatePayment() {
 		Connection connection = null;
 		PreparedStatement preparedStatement = null;
 
-		int customerID = payment.getCustomer().getCustomerID();
-		int cardNumber = payment.getCardNumber();
-		int cardCVV = payment.getCardCVV();
-		Date cardExpiryDate = payment.getCardExpiryDate();
-		String cardHolderName = payment.getCardHolderName();
-		double amount = payment.getAmount();
-		Date date = payment.getDate();
-		Time time = payment.getTime();
+		int customerID = customer.getCustomerID();
+		int cardNumber = getCardNumber();
+		int cardCVV = getCardCVV();
+		Date cardExpiryDate = getCardExpiryDate();
+		String cardHolderName = getCardHolderName();
+		double amount = getAmount();
+		Date date = getDate();
+		Time time = getTime();
 		int i = 0;
 
 		try {
 			connection = Database.getConnection();
-			preparedStatement = connection.prepareStatement("UPDATE payment SET customerID=?, cardNumber=?, cardCVV=?, cardExpiryDate=?, cardHolderName=?, amount=?, date=?, time=?");
+			preparedStatement = connection.prepareStatement("UPDATE payment SET customerID=?, cardNumber=?, cardCVV=?, cardExpiryDate=?, cardHolderName=?, amount=?, date=?, time=? WHERE customerID=?");
 			preparedStatement.setInt(1, customerID);
 			preparedStatement.setInt(2, cardNumber);
 			preparedStatement.setInt(3, cardCVV);
@@ -182,6 +182,7 @@ public class Payment {
 			preparedStatement.setDouble(6, amount);
 			preparedStatement.setDate(7, date);
 			preparedStatement.setTime(8, time);
+			preparedStatement.setInt(9, customerID);
 			i = preparedStatement.executeUpdate();
 			System.out.println(i + " record successfully updated in the payment table");
 		} catch(SQLException sqlException) {

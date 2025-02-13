@@ -2,7 +2,6 @@ package ie.hotelbooking.model.booking;
 
 import ie.hotelbooking.model.Database;
 import ie.hotelbooking.model.location.*;
-import javafx.scene.chart.PieChart.Data;
 
 import java.sql.*;
 

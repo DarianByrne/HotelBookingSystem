@@ -6,7 +6,7 @@ import java.sql.*;
 
 public class Customer {
 	static int customerIDCounter = 0;
-	private int customerID;
+	private final int customerID;
 	private String name;
 	private String phoneNumber;
 	private String email;
@@ -14,11 +14,11 @@ public class Customer {
 	private String address;
 
 	public Customer() {
-		setCustomerID();
+        this.customerID = setCustomerID();
 	}
 
-	public Customer(String name, String phoneNumber, String email, Date dateOfBirth, String address) {
-		setCustomerID();
+	public Customer(int customerID, String name, String phoneNumber, String email, Date dateOfBirth, String address) {
+        this.customerID = setCustomerID();
 		this.name = name;
 		this.phoneNumber = phoneNumber;
 		this.email = email;
@@ -29,9 +29,8 @@ public class Customer {
 	public int getCustomerID() {
 		return customerID;
 	}
-	public void setCustomerID() {
-		customerIDCounter++;
-		customerID = customerIDCounter;
+	public int setCustomerID() {
+		return customerIDCounter++;
 	}
 	public String getName() {
 		return name;
