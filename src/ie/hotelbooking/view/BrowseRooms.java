@@ -3,6 +3,7 @@ package ie.hotelbooking.view;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ItemEvent;
+import static ie.hotelbooking.Main.changeScreen;
 
 public class BrowseRooms extends JPanel {
 	private final JLabel label1;
@@ -35,7 +36,7 @@ public class BrowseRooms extends JPanel {
 
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == viewAvailabilityButton) {
-			new ViewAvailability(roomTypeComboBox.getSelectedItem() + " size bedroom");
+			changeScreen(new ViewAvailability(roomTypeComboBox.getSelectedItem() + " size bedroom"));
 		}
 	}
 }
