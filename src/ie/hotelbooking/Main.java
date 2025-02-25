@@ -12,6 +12,7 @@ public class Main {
 	public static void main(String[] args) {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setSize(800, 600);
+		frame.setMinimumSize(new Dimension(600, 400));
 		frame.setLocationRelativeTo(null);
 		frame.setLayout(new BorderLayout());
 
