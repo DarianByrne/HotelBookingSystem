@@ -2,7 +2,7 @@ package ie.hotelbooking.view;
 
 import javax.swing.*;
 import java.awt.*;
-import static ie.hotelbooking.Main.frame;
+import static ie.hotelbooking.Main.changeScreen;
 
 public class MainMenu extends JPanel {
 	private JButton browseRoomsButton;
@@ -15,14 +15,11 @@ public class MainMenu extends JPanel {
 	private JButton bookConferenceButton;
 	private JButton viewMenuButton;
 	private JButton viewAvailabilityButton;
+	private JButton cancelPassButton;
+	private JButton updateCustomerButton;
 
 	public MainMenu() {
-		frame.setTitle("Main Menu");
-		frame.setContentPane(this);
-		updateUI();
-
-		setLayout(new GridLayout(3, 4));
-		setVisible(true);
+		setLayout(new GridLayout(0, 1));
 
 		browseRoomsButton = new JButton("Browse Rooms");
 		bookRoomButton = new JButton("Book Room");
@@ -34,6 +31,8 @@ public class MainMenu extends JPanel {
 		bookConferenceButton = new JButton("Book Conference");
 		viewMenuButton = new JButton("View Menu");
 		viewAvailabilityButton = new JButton("View Availability");
+		cancelPassButton = new JButton("Cancel Pass");
+		updateCustomerButton = new JButton("Update Customer");
 		add(browseRoomsButton);
 		add(bookRoomButton);
 		add(reserveTableButton);
@@ -44,22 +43,20 @@ public class MainMenu extends JPanel {
 		add(bookConferenceButton);
 		add(viewMenuButton);
 		add(viewAvailabilityButton);
+		add(cancelPassButton);
+		add(updateCustomerButton);
 
-		browseRoomsButton.addActionListener(e -> new BrowseRooms());
-		bookRoomButton.addActionListener(e -> JOptionPane.showMessageDialog(frame, "Book Room", "Book Room", JOptionPane.PLAIN_MESSAGE));
-		reserveTableButton.addActionListener(e -> JOptionPane.showMessageDialog(frame, "Reserve Table", "Reserve Table", JOptionPane.PLAIN_MESSAGE));
-		bookGymButton.addActionListener(e -> JOptionPane.showMessageDialog(frame, "Book Gym", "Book Gym", JOptionPane.PLAIN_MESSAGE));
-		purchasePassButton.addActionListener(e -> JOptionPane.showMessageDialog(frame, "Purchase Pass", "Purchase Pass", JOptionPane.PLAIN_MESSAGE));
-		bookSpaButton.addActionListener(e -> JOptionPane.showMessageDialog(frame, "Book Spa", "Book Spa", JOptionPane.PLAIN_MESSAGE));
-		bookWeddingButton.addActionListener(e -> JOptionPane.showMessageDialog(frame, "Book Wedding", "Book Wedding", JOptionPane.PLAIN_MESSAGE));
-		bookConferenceButton.addActionListener(e -> JOptionPane.showMessageDialog(frame, "Book Conference", "Book Conference", JOptionPane.PLAIN_MESSAGE));
-		viewMenuButton.addActionListener(e -> JOptionPane.showMessageDialog(frame, "View Menu", "View Menu", JOptionPane.PLAIN_MESSAGE));
-		viewAvailabilityButton.addActionListener(e -> new ViewAvailability());
-
-		frame.setContentPane(this);
-	}
-
-	public static void main(String[] args) {
-		new MainMenu();
+		browseRoomsButton.addActionListener(e -> changeScreen(new BrowseRooms()));
+		bookRoomButton.addActionListener(e -> JOptionPane.showMessageDialog(null, "Book Room", "Book Room", JOptionPane.PLAIN_MESSAGE));
+		reserveTableButton.addActionListener(e -> changeScreen(new ReserveTable()));
+		bookGymButton.addActionListener(e -> JOptionPane.showMessageDialog(null, "Book Gym", "Book Gym", JOptionPane.PLAIN_MESSAGE));
+		purchasePassButton.addActionListener(e -> JOptionPane.showMessageDialog(null, "Purchase Pass", "Purchase Pass", JOptionPane.PLAIN_MESSAGE));
+		bookSpaButton.addActionListener(e -> JOptionPane.showMessageDialog(null, "Book Spa", "Book Spa", JOptionPane.PLAIN_MESSAGE));
+		bookWeddingButton.addActionListener(e -> JOptionPane.showMessageDialog(null, "Book Wedding", "Book Wedding", JOptionPane.PLAIN_MESSAGE));
+		bookConferenceButton.addActionListener(e -> JOptionPane.showMessageDialog(null, "Book Conference", "Book Conference", JOptionPane.PLAIN_MESSAGE));
+		viewMenuButton.addActionListener(e -> changeScreen(new ViewMenu()));
+		viewAvailabilityButton.addActionListener(e -> changeScreen(new ViewAvailability()));
+		cancelPassButton.addActionListener(e -> changeScreen(new CancelPass()));
+		updateCustomerButton.addActionListener(e -> changeScreen(new UpdateCustomer()));
 	}
 }

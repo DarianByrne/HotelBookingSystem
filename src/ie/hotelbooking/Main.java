@@ -1,20 +1,35 @@
 package ie.hotelbooking;
-
+//TODO have stack that tracks navigation, close brings you back through the stack
 import ie.hotelbooking.view.MainMenu;
 import javax.swing.*;
 import java.awt.*;
 
 public class Main {
-	public static JFrame frame = new JFrame("Hotel Booking System");
+	private static JFrame frame = new JFrame("Hotel Booking System");
+	private static JPanel mainMenuPanel = new MainMenu();
+	private static JRootPane rootPane = new JRootPane();
 
 	public static void main(String[] args) {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setSize(800, 600);
+		frame.setMinimumSize(new Dimension(600, 400));
 		frame.setLocationRelativeTo(null);
-		frame.setVisible(true);
-		frame.setLayout(new FlowLayout(FlowLayout.CENTER));
-		new MainMenu();
+		frame.setLayout(new BorderLayout());
 
+		JLabel label1 = new JLabel("Welcome to Hotel Booking System");
+		JPanel panel1 = new JPanel();
+		panel1.setLayout(new FlowLayout(FlowLayout.CENTER));
+		panel1.add(label1);
+		rootPane.setContentPane(panel1);
+
+//		TODO change the main menu to be full screen initially
+//		mainMenuPanel.setLayout(new GridLayout(0, 4));
+//		frame.add(mainMenuPanel, BorderLayout.CENTER);
+
+		frame.add(mainMenuPanel, BorderLayout.WEST);
+		frame.add(rootPane, BorderLayout.CENTER);
+
+		frame.setVisible(true);
 //		LocalDate today = LocalDate.now();
 //		LocalTime time = LocalTime.now().truncatedTo(ChronoUnit.MINUTES);
 //
@@ -54,5 +69,11 @@ public class Main {
 //		customer.addCustomer();
 //		payment.addPayment();
 //		booking.addBooking();
+	}
+
+	public static void changeScreen(JPanel panel) {
+//		mainMenuPanel.setLayout(new GridLayout(0, 1));
+		rootPane.setContentPane(panel);
+		frame.validate();
 	}
 }
