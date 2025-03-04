@@ -5,7 +5,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class Main {
-	private static JFrame frame = new JFrame("Hotel Booking System");
+	public static JFrame frame = new JFrame("Hotel Booking System");
 	private static JPanel mainMenuPanel = new MainMenu();
 	private static JRootPane rootPane = new JRootPane();
 

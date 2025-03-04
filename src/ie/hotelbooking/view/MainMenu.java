@@ -47,16 +47,20 @@ public class MainMenu extends JPanel {
 		add(updateCustomerButton);
 
 		browseRoomsButton.addActionListener(e -> changeScreen(new BrowseRooms()));
-		bookRoomButton.addActionListener(e -> JOptionPane.showMessageDialog(null, "Book Room", "Book Room", JOptionPane.PLAIN_MESSAGE));
+		bookRoomButton.addActionListener(e -> changeScreen(new BookRoom()));
 		reserveTableButton.addActionListener(e -> changeScreen(new ReserveTable()));
-		bookGymButton.addActionListener(e -> JOptionPane.showMessageDialog(null, "Book Gym", "Book Gym", JOptionPane.PLAIN_MESSAGE));
-		purchasePassButton.addActionListener(e -> JOptionPane.showMessageDialog(null, "Purchase Pass", "Purchase Pass", JOptionPane.PLAIN_MESSAGE));
-		bookSpaButton.addActionListener(e -> JOptionPane.showMessageDialog(null, "Book Spa", "Book Spa", JOptionPane.PLAIN_MESSAGE));
-		bookWeddingButton.addActionListener(e -> JOptionPane.showMessageDialog(null, "Book Wedding", "Book Wedding", JOptionPane.PLAIN_MESSAGE));
-		bookConferenceButton.addActionListener(e -> JOptionPane.showMessageDialog(null, "Book Conference", "Book Conference", JOptionPane.PLAIN_MESSAGE));
+		bookGymButton.addActionListener(e -> underConstruction());
+		purchasePassButton.addActionListener(e -> changeScreen(new PurchasePass()));
+		bookSpaButton.addActionListener(e -> underConstruction());
+		bookWeddingButton.addActionListener(e -> underConstruction());
+		bookConferenceButton.addActionListener(e -> underConstruction());
 		viewMenuButton.addActionListener(e -> changeScreen(new ViewMenu()));
 		viewAvailabilityButton.addActionListener(e -> changeScreen(new ViewAvailability()));
 		cancelPassButton.addActionListener(e -> changeScreen(new CancelPass()));
 		updateCustomerButton.addActionListener(e -> changeScreen(new UpdateCustomer()));
+	}
+
+	private void underConstruction() {
+		JOptionPane.showMessageDialog(ie.hotelbooking.Main.frame, "This screen is under construction", "Under Construction", JOptionPane.PLAIN_MESSAGE);
 	}
 }
