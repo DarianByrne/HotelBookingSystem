@@ -18,5 +18,6 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="github.lgooddatepicker.LGoodDatePicker" level="project" />
+    <orderEntry type="library" name="formdev.flatlaf" level="project" />
   </component>
 </module>

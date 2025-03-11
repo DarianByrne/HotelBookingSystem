@@ -1,15 +1,28 @@
 package ie.hotelbooking;
 //TODO have stack that tracks navigation, close brings you back through the stack
+
+import com.formdev.flatlaf.themes.FlatMacDarkLaf;
 import ie.hotelbooking.view.MainMenu;
+
 import javax.swing.*;
 import java.awt.*;
 
 public class Main {
-	public static JFrame frame = new JFrame("Hotel Booking System");
-	private static JPanel mainMenuPanel = new MainMenu();
-	private static JRootPane rootPane = new JRootPane();
+	public static JFrame frame;
+	private static JPanel mainMenuPanel;
+	private static JRootPane rootPane;
 
 	public static void main(String[] args) {
+		try {
+			UIManager.setLookAndFeel(new FlatMacDarkLaf());
+		} catch (Exception ex) {
+			System.err.println("Failed to initialize LaF");
+		}
+
+		frame = new JFrame("Hotel Booking System");
+		mainMenuPanel = new MainMenu();
+		rootPane = new JRootPane();
+
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setSize(800, 600);
 		frame.setMinimumSize(new Dimension(600, 400));
