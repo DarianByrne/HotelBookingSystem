@@ -3,6 +3,7 @@ package ie.hotelbooking.view;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ItemEvent;
+import ie.hotelbooking.model.booking.*;
 
 import static ie.hotelbooking.Main.changeScreen;
 
@@ -46,7 +47,14 @@ public class BookRoom extends JPanel {
 
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == continueToBookingButton) {
-			changeScreen(new BookingPayment());
+			RoomBooking roomBooking = createRoomBooking();
+			changeScreen(new BookingPayment(roomBooking));
 		}
+	}
+	public RoomBooking createRoomBooking() {
+		RoomBooking roomBooking = new RoomBooking();
+		roomBooking.setRoomType((String) roomTypeComboBox.getSelectedItem());
+		roomBooking.setNumberOfGuests(Integer.parseInt(numberOfGuestsSpinner.getValue().toString()));
+		return roomBooking;
 	}
 }
