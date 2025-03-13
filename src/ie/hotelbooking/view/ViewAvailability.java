@@ -4,6 +4,14 @@ import com.github.lgooddatepicker.components.DatePicker;
 import com.github.lgooddatepicker.zinternaltools.DateChangeEvent;
 import javax.swing.*;
 
+import ie.hotelbooking.model.Database;
+import ie.hotelbooking.model.booking.*;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
 public class ViewAvailability extends JPanel {
 	private final JLabel label1;
 	private final DatePicker datePicker;
@@ -30,4 +38,25 @@ public class ViewAvailability extends JPanel {
 			label2.setText(datePicker.getDate() + " selected");
 		}
 	}
+	public boolean dateAvailable() {
+		Connection con = null;
+		PreparedStatement ps = null;
+		ResultSet rs = null;
+
+		try {
+			con = Database.getConnection();
+			ps = con.prepareStatement("SELECT * FROM booking WHERE arrivalDate=?");
+			rs = ps.executeQuery();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				con.close();
+				ps.close();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+        return !rs.next();
+    }
 }

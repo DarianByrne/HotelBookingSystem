@@ -102,9 +102,13 @@ public class Booking {
 
         try {
             connection = Database.getConnection();
-            preparedStatement = connection.prepareStatement("INSERT INTO booking(paymentID, customerID) VALUES(?, ?)");
+            preparedStatement = connection.prepareStatement("INSERT INTO booking(paymentID, customerID, arrivalDate, departureDate, arrivalTime, departureTime) VALUES(?, ?, ?, ?, ?, ?)");
             preparedStatement.setInt(1, payment.getPaymentID());
             preparedStatement.setInt(2, customer.getCustomerID());
+            preparedStatement.setDate(3, getArrivalDate());
+            preparedStatement.setDate(4, getDepartureDate());
+            preparedStatement.setTime(5, getArrivalTime());
+            preparedStatement.setTime(6, getDepartureTime());
             i = preparedStatement.executeUpdate();
             System.out.println(i + " record successfully added to the booking table");
         } catch (SQLException e) {
@@ -125,10 +129,14 @@ public class Booking {
 
         try {
             connection = Database.getConnection();
-            preparedStatement = connection.prepareStatement("UPDATE booking SET paymentID=?, customerID=? WHERE bookingID=?");
+            preparedStatement = connection.prepareStatement("UPDATE booking SET paymentID=?, customerID=?, arrivalDate=?, departureDate=?, arrivalTime=?, departureTime=? WHERE bookingID=?");
             preparedStatement.setInt(1, getPaymentID());
             preparedStatement.setInt(2, getCustomerID());
-            preparedStatement.setInt(3, getBookingID());
+            preparedStatement.setDate(3, getArrivalDate());
+            preparedStatement.setDate(4, getDepartureDate());
+            preparedStatement.setTime(5, getArrivalTime());
+            preparedStatement.setTime(6, getDepartureTime());
+            preparedStatement.setInt(7, getBookingID());
             i = preparedStatement.executeUpdate();
             System.out.println(i + " record successfully updated to the booking table");
         } catch (SQLException e) {

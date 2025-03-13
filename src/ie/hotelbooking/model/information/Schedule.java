@@ -4,55 +4,25 @@ import ie.hotelbooking.model.booking.*;
 import java.sql.Date;
 import java.sql.Time;
 
-/**
- *
- */
 public class Schedule {
-
-	/**
-	 * Default constructor
-	 */
-	public Schedule() {
-	}
-
-	/**
-	 *
-	 */
 	private Date date;
-
-	/**
-	 *
-	 */
 	private Time time;
+	private RoomBooking[] roomBookings;
+	private WeddingBooking[] weddingBookings;
+	private GymBooking[] gymBookings;
+	private SpaBooking[] spaBookings;
+	private RestaurantReservation[] restaurantReservations;
+	private ConferenceBooking[] conferenceBookings;
 
-	/**
-	 *
-	 */
-	private Booking[] roomBookings;
-
-	/**
-	 *
-	 */
-	private Booking[] weddingBookings;
-
-	/**
-	 *
-	 */
-	private Booking[] gymBookings;
-
-	/**
-	 *
-	 */
-	private Booking[] spaBookings;
-
-	/**
-	 *
-	 */
-	private Booking[] restaurantReservations;
-
-	/**
-	 *
-	 */
-	private Booking[] conferenceBookings;
-
+	public Schedule() {}
+	public Schedule(Date date, Time time, RoomBooking[] roomBookings, WeddingBooking[] weddingBookings, GymBooking[] gymBookings, SpaBooking[] spaBookings, RestaurantReservation[] restaurantReservations, ConferenceBooking[] conferenceBookings) {
+		this.date = date;
+		this.time = time;
+		this.roomBookings = roomBookings;
+		this.weddingBookings = weddingBookings;
+		this.gymBookings = gymBookings;
+		this.spaBookings = spaBookings;
+		this.restaurantReservations = restaurantReservations;
+		this.conferenceBookings = conferenceBookings;
+	}
 }
