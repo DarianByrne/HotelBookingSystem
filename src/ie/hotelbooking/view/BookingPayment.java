@@ -2,6 +2,7 @@ package ie.hotelbooking.view;
 
 import com.github.lgooddatepicker.components.DatePicker;
 import com.github.lgooddatepicker.zinternaltools.DateChangeEvent;
+import ie.hotelbooking.model.booking.RoomBooking;
 
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
@@ -105,9 +106,15 @@ public class BookingPayment extends JPanel {
 		cardCVVSpinner = new JSpinner(new SpinnerNumberModel(0, 0, 9999, 1));
 		add(cardCVVSpinner);
 
-		finaliseBookingButton = new JButton("Continue to Booking");
+		finaliseBookingButton = new JButton("Finalise Booking");
 		finaliseBookingButton.addActionListener(this::actionPerformed);
 		add(finaliseBookingButton);
+	}
+
+	public BookingPayment(RoomBooking roomBooking) {
+//		TODO use data in roomBooking object
+		this();
+		add(new JLabel("Room Booking"));
 	}
 
 	public void actionPerformed(ActionEvent e) {
