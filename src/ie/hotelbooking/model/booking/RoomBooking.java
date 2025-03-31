@@ -12,8 +12,6 @@ public class RoomBooking extends Booking {
 	private int roomBookingID;
 	private String roomNumber;
 	private String roomType;
-	private Date arrivalDate;
-	private Date departureDate;
 	private int numberOfGuests;
 
 	public RoomBooking() {
@@ -24,8 +22,8 @@ public class RoomBooking extends Booking {
 		this.roomBookingID = this.getBookingID();
 		this.roomNumber = roomNumber;
 		this.roomType = roomType;
-		this.arrivalDate = this.getArrivalDate();
-		this.departureDate = this.getDepartureDate();
+		this.setArrivalDate((java.sql.Date) arrivalDate);
+		this.setDepartureDate((java.sql.Date) departureDate);
 		this.numberOfGuests = numberOfGuests;
 	}
 	public String getRoomNumber() {
@@ -75,8 +73,52 @@ public class RoomBooking extends Booking {
 	}
 	public void updateRoomBooking() {
 		this.updateBooking();
+		Connection con = null;
+		PreparedStatement ps = null;
+		int i = 0;
+
+		try {
+			con = Database.getConnection();
+			ps = con.prepareStatement("UPDATE room_booking SET roomNumber=?, arrivalDate=?, departureDate=?, numberOfGuests=? WHERE bookingID=?");
+			ps.setString(1, this.getRoomNumber());
+			ps.setDate(2, this.getArrivalDate());
+			ps.setDate(3, this.getDepartureDate());
+			ps.setInt(4, this.getNumberOfGuests());
+			ps.setInt(5, this.getBookingID());
+			i = ps.executeUpdate();
+			System.out.println(i + " record(s) updated in the database");
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				con.close();
+				ps.close();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
 	}
 	public void deleteRoomBooking() {
 		this.deleteBooking();
+		Connection con = null;
+		PreparedStatement ps = null;
+		int i = 0;
+
+		try {
+			con = Database.getConnection();
+			ps = con.prepareStatement("DELETE FROM room_booking WHERE bookingID=?");
+			ps.setInt(1, this.getBookingID());
+			i = ps.executeUpdate();
+			System.out.println(i + " record(s) deleted from the database");
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				con.close();
+				ps.close();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
 	}
 }
