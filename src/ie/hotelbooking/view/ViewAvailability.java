@@ -57,6 +57,10 @@ public class ViewAvailability extends JPanel {
 				e.printStackTrace();
 			}
 		}
-        return !rs.next();
+        try {
+            return !rs.next();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
