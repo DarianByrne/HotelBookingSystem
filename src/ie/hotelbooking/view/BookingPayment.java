@@ -4,18 +4,21 @@ import com.github.lgooddatepicker.components.DatePicker;
 import com.github.lgooddatepicker.zinternaltools.DateChangeEvent;
 import ie.hotelbooking.model.booking.Booking;
 import ie.hotelbooking.model.booking.RoomBooking;
+import ie.hotelbooking.model.customer.Customer;
 
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 
+import java.sql.Date;
+import java.sql.Time;
+import java.time.LocalDate;
+
+import static ie.hotelbooking.Main.changeScreen;
+
 public class BookingPayment extends JPanel {
 	private RoomBooking roomBooking;
-	private JLabel arrivalDateLabel;
-	private JLabel departureDateLabel;
-	private DatePicker arrivalDatePicker;
-	private DatePicker departureDatePicker;
 	private JLabel previousCustomerLabel;
 	private JCheckBox previousCustomerCheckBox;
 	private JLabel customerIdLabel;
@@ -40,21 +43,10 @@ public class BookingPayment extends JPanel {
 	private JLabel cardCVVLabel;
 	private JSpinner cardCVVSpinner;
 	private JButton finaliseBookingButton;
+	private JButton cancelBookingButton;
 
 	public void initializeUI() {
 		setLayout(new GridLayout(0, 2));
-
-		arrivalDateLabel = new JLabel("Arrival date: ");
-		add(arrivalDateLabel);
-		arrivalDatePicker = new DatePicker();
-		arrivalDatePicker.addDateChangeListener(this::bookingDateChanged);
-		add(arrivalDatePicker);
-
-		departureDateLabel = new JLabel("Departure date: ");
-		add(departureDateLabel);
-		departureDatePicker = new DatePicker();
-		departureDatePicker.addDateChangeListener(this::bookingDateChanged);
-		add(departureDatePicker);
 
 		previousCustomerLabel = new JLabel("Previous customer: ");
 		add(previousCustomerLabel);
@@ -118,6 +110,10 @@ public class BookingPayment extends JPanel {
 		finaliseBookingButton = new JButton("Finalise Booking");
 		finaliseBookingButton.addActionListener(this::actionPerformed);
 		add(finaliseBookingButton);
+
+		cancelBookingButton = new JButton("Cancel Booking");
+		cancelBookingButton.addActionListener(this::actionPerformed);
+		add(cancelBookingButton);
 	}
 
 	public BookingPayment() {
@@ -133,7 +129,10 @@ public class BookingPayment extends JPanel {
 
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == finaliseBookingButton) {
-//			TODO create booking, show confirmation screen, print receipt
+			addBookingDetails();
+			changeScreen(new BookingConfirmation());
+		} else if (e.getSource() == cancelBookingButton) {
+			changeScreen(new BookRoom());
 		}
 	}
 
@@ -170,18 +169,32 @@ public class BookingPayment extends JPanel {
 		}
 	}
 
-	public void bookingDateChanged(DateChangeEvent e) {
-		if (e.getSource() == departureDatePicker) {
-//			label2.setText(datePicker.getDate() + " selected");
-		}
-	}
-
 	public void dobDateChanged(DateChangeEvent e) {
 		if (e.getSource() == dobDatePicker) {
 //			label2.setText(datePicker.getDate() + " selected");
 		}
 	}
-	public void addBookingDetails() {
 
+	public void setCustomerDateOfBirth(Customer customer) {
+		LocalDate dobDate = dobDatePicker.getDate();
+		if (dobDate != null) {
+			customer.setDateOfBirth(Date.valueOf(dobDate));
+		}
+	}
+
+	public Customer createCustomer() {
+		Customer customer = new Customer();
+		customer.setName(nameTextField.getText());
+		customer.setAddress(addressTextArea.getText());
+		setCustomerDateOfBirth(customer);
+		customer.setPhoneNumber(phoneTextField.getText());
+		customer.setEmail(emailTextField.getText());
+
+		return customer;
+	}
+
+	public void addBookingDetails() {
+		Customer customer = createCustomer();
+		this.roomBooking.setCustomer(customer);
 	}
 }

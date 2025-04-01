@@ -3,6 +3,9 @@ package ie.hotelbooking.view;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ItemEvent;
+
+import com.github.lgooddatepicker.components.DatePicker;
+import com.github.lgooddatepicker.zinternaltools.DateChangeEvent;
 import ie.hotelbooking.model.booking.*;
 
 import static ie.hotelbooking.Main.changeScreen;
@@ -14,8 +17,24 @@ public class BookRoom extends JPanel {
 	private final JLabel label3;
 	private final JSpinner numberOfGuestsSpinner;
 	private final JButton continueToBookingButton;
+	private JLabel arrivalDateLabel;
+	private JLabel departureDateLabel;
+	private DatePicker arrivalDatePicker;
+	private DatePicker departureDatePicker;
 
 	public BookRoom() {
+		arrivalDateLabel = new JLabel("Arrival date: ");
+		add(arrivalDateLabel);
+		arrivalDatePicker = new DatePicker();
+		arrivalDatePicker.addDateChangeListener(this::bookingDateChanged);
+		add(arrivalDatePicker);
+
+		departureDateLabel = new JLabel("Departure date: ");
+		add(departureDateLabel);
+		departureDatePicker = new DatePicker();
+		departureDatePicker.addDateChangeListener(this::bookingDateChanged);
+		add(departureDatePicker);
+
 		label1 = new JLabel("Select a room type");
 		add(label1);
 
@@ -36,6 +55,14 @@ public class BookRoom extends JPanel {
 		continueToBookingButton = new JButton("Continue to Booking");
 		continueToBookingButton.addActionListener(this::actionPerformed);
 		add(continueToBookingButton);
+	}
+
+	public void bookingDateChanged(DateChangeEvent e) {
+		if (e.getSource() == arrivalDatePicker) {
+
+		} else if (e.getSource() == departureDatePicker) {
+
+		}
 	}
 
 	public void itemStateChanged(ItemEvent e) {
