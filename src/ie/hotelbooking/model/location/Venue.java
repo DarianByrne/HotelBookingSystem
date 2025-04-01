@@ -1,8 +1,6 @@
 package ie.hotelbooking.model.location;
 
-/**
- *
- */
+
 public class Venue {
 	private String name;
 	private int capacity;

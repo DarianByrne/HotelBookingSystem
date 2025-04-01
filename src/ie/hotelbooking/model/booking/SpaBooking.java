@@ -69,11 +69,50 @@ public class SpaBooking extends Booking {
 		Connection con = null;
 		PreparedStatement ps = null;
 		int i = 0;
+
+		try {
+			con = Database.getConnection();
+			ps = con.prepareStatement("UPDATE spa_booking SET date=?, arrivalTime=?, departureTime=?, numberOfGuests=?, spaServiceID=? WHERE bookingID=?");
+			ps.setDate(1, this.getArrivalDate());
+			ps.setTime(2, this.getArrivalTime());
+			ps.setTime(3, this.getDepartureTime());
+			ps.setInt(4, getNumberOfGuests());
+			ps.setInt(5, getSpaService().getSpaServiceID());
+			ps.setInt(6, this.getBookingID());
+			i = ps.executeUpdate();
+			System.out.println(i + " rows updated");
+		} catch(SQLException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				con.close();
+				ps.close();
+			} catch(Exception e) {
+				e.printStackTrace();
+			}
+		}
 	}
 	public void deleteSpaBooking() {
 		this.deleteBooking();
 		Connection con = null;
 		PreparedStatement ps = null;
 		int i = 0;
+
+		try {
+			con = Database.getConnection();
+			ps = con.prepareStatement("DELETE FROM spa_booking WHERE bookingID=?");
+			ps.setInt(1, this.getBookingID());
+			i = ps.executeUpdate();
+			System.out.println(i + " rows deleted");
+		} catch(SQLException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				con.close();
+				ps.close();
+			} catch(Exception e) {
+				e.printStackTrace();
+			}
+		}
 	}
 }
