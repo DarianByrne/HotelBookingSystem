@@ -2,6 +2,7 @@ package ie.hotelbooking.view;
 
 import com.github.lgooddatepicker.components.DatePicker;
 import com.github.lgooddatepicker.zinternaltools.DateChangeEvent;
+import ie.hotelbooking.model.booking.Booking;
 import ie.hotelbooking.model.booking.RoomBooking;
 
 import javax.swing.*;
@@ -10,42 +11,50 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 
 public class BookingPayment extends JPanel {
-	private final JLabel bookingDateLabel;
-	private final DatePicker bookingDatePicker;
-	private final JLabel previousCustomerLabel;
-	private final JCheckBox previousCustomerCheckBox;
-	private final JLabel customerIdLabel;
-	private final JSpinner customerIdTextSpinner;
-	private final JLabel nameLabel;
-	private final JTextField nameTextField;
-	private final JLabel phoneLabel;
-	private final JTextField phoneTextField;
-	private final JLabel emailLabel;
-	private final JTextField emailTextField;
-	private final JLabel dobLabel;
-	private final DatePicker dobDatePicker;
-	private final JLabel addressLabel;
-	private final JTextArea addressTextArea;
+	private RoomBooking roomBooking;
+	private JLabel arrivalDateLabel;
+	private JLabel departureDateLabel;
+	private DatePicker arrivalDatePicker;
+	private DatePicker departureDatePicker;
+	private JLabel previousCustomerLabel;
+	private JCheckBox previousCustomerCheckBox;
+	private JLabel customerIdLabel;
+	private JSpinner customerIdTextSpinner;
+	private JLabel nameLabel;
+	private JTextField nameTextField;
+	private JLabel phoneLabel;
+	private JTextField phoneTextField;
+	private JLabel emailLabel;
+	private JTextField emailTextField;
+	private JLabel dobLabel;
+	private DatePicker dobDatePicker;
+	private JLabel addressLabel;
+	private JTextArea addressTextArea;
 
-	private final JLabel cardHolderNameLabel;
-	private final JTextField cardHolderNameTextField;
-	private final JLabel cardNumberLabel;
-	private final JTextField cardNumberTextField;
-	private final JLabel cardExpiryDateLabel;
-	private final JTextField cardExpiryDateTextField;
-	private final JLabel cardCVVLabel;
-	private final JSpinner cardCVVSpinner;
-	private final JButton finaliseBookingButton;
+	private JLabel cardHolderNameLabel;
+	private JTextField cardHolderNameTextField;
+	private JLabel cardNumberLabel;
+	private JTextField cardNumberTextField;
+	private JLabel cardExpiryDateLabel;
+	private JTextField cardExpiryDateTextField;
+	private JLabel cardCVVLabel;
+	private JSpinner cardCVVSpinner;
+	private JButton finaliseBookingButton;
 
-	public BookingPayment() {
-//		TODO nicer layout
+	public void initializeUI() {
 		setLayout(new GridLayout(0, 2));
 
-		bookingDateLabel = new JLabel("Booking date: ");
-		add(bookingDateLabel);
-		bookingDatePicker = new DatePicker();
-		bookingDatePicker.addDateChangeListener(this::bookingDateChanged);
-		add(bookingDatePicker);
+		arrivalDateLabel = new JLabel("Arrival date: ");
+		add(arrivalDateLabel);
+		arrivalDatePicker = new DatePicker();
+		arrivalDatePicker.addDateChangeListener(this::bookingDateChanged);
+		add(arrivalDatePicker);
+
+		departureDateLabel = new JLabel("Departure date: ");
+		add(departureDateLabel);
+		departureDatePicker = new DatePicker();
+		departureDatePicker.addDateChangeListener(this::bookingDateChanged);
+		add(departureDatePicker);
 
 		previousCustomerLabel = new JLabel("Previous customer: ");
 		add(previousCustomerLabel);
@@ -111,10 +120,15 @@ public class BookingPayment extends JPanel {
 		add(finaliseBookingButton);
 	}
 
+	public BookingPayment() {
+//		TODO nicer layout
+		initializeUI();
+	}
+
 	public BookingPayment(RoomBooking roomBooking) {
 //		TODO use data in roomBooking object
-		this();
-		add(new JLabel("Room Booking"));
+		this.roomBooking = roomBooking;
+		initializeUI();
 	}
 
 	public void actionPerformed(ActionEvent e) {
@@ -157,7 +171,7 @@ public class BookingPayment extends JPanel {
 	}
 
 	public void bookingDateChanged(DateChangeEvent e) {
-		if (e.getSource() == bookingDatePicker) {
+		if (e.getSource() == departureDatePicker) {
 //			label2.setText(datePicker.getDate() + " selected");
 		}
 	}
@@ -166,5 +180,8 @@ public class BookingPayment extends JPanel {
 		if (e.getSource() == dobDatePicker) {
 //			label2.setText(datePicker.getDate() + " selected");
 		}
+	}
+	public void addBookingDetails() {
+
 	}
 }
