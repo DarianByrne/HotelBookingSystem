@@ -39,56 +39,87 @@ public class Customer {
 		this.dateOfBirth = dateOfBirth;
 		this.address = address;
 	}
-
+	/**
+	 * Getter method for the instance variable customerID
+	 * @return the Customer ID of the Customer object
+	 */
 	public int getCustomerID() {
 		return customerID;
 	}
+	/**
+	 * Setter method for the instance variable customerID
+	 */
 	public void setCustomerID() {
 		customerID = customerIDCounter++;
 	}
+	/**
+	 * Getter method for the instance variable customerIDCounter
+	 * @return the Customer ID Counter of the Customer object
+	 */
 	public String getName() {
 		return name;
 	}
-
+	/**
+	 * Setter method for the instance variable customerIDCounter
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}
-
+	/**
+	 * Getter method for the instance variable customerIDCounter
+	 * @return the Customer ID Counter of the Customer object
+	 */
 	public String getPhoneNumber() {
 		return phoneNumber;
 	}
-
+	/**
+	 * Setter method for the instance variable customerIDCounter
+	 */
 	public void setPhoneNumber(String phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
-
+	/**
+	 * Getter method for the instance variable customerIDCounter
+	 * @return the Customer ID Counter of the Customer object
+	 */
 	public String getEmail() {
 		return email;
 	}
-
+	/**
+	 * Setter method for the instance variable customerIDCounter
+	 */
 	public void setEmail(String email) {
 		this.email = email;
 	}
-
+	/**
+	 * Getter method for the instance variable customerIDCounter
+	 * @return the Customer ID Counter of the Customer object
+	 */
 	public Date getDateOfBirth() {
 		return dateOfBirth;
 	}
-
+	/**
+	 * Setter method for the instance variable customerIDCounter
+	 */
 	public void setDateOfBirth(Date dateOfBirth) {
 		this.dateOfBirth = dateOfBirth;
 	}
-
+	/**
+	 * Getter method for the instance variable customerIDCounter
+	 * @return the Customer ID Counter of the Customer object
+	 */
 	public String getAddress() {
 		return address;
 	}
-
+	/**
+	 * Setter method for the instance variable customerIDCounter
+	 */
 	public void setAddress(String address) {
 		this.address = address;
 	}
 
 	/**
-	 * Method to add customer details
-	 * @return String
+	 * CRUD method to add customer detials into the database
 	 */
 
 	public void addCustomer() {
@@ -119,8 +150,7 @@ public class Customer {
 	}
 
 	/**
-	 * Method to update customer details
-	 * @return String
+	 * CRUD method to retrieve customer details from the database
 	 */
 	public void updateCustomer() {
 		Connection connection = null;
@@ -150,8 +180,7 @@ public class Customer {
 		}
 	}
 	/**
-	 * Method to delete customer details
-	 * @return String
+	 * CRUD method to delete customer details from the database
 	 */
 	public void deleteCustomer()
 	{

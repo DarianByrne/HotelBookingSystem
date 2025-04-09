@@ -17,25 +17,41 @@ public class GymSession {
 		setRate(rate);
 	}
 	/**
-	 * Constructor with parameters
-	 * @param name
-	 * @param rate
+	 * Getter method for the instance variable gymSessionID
+	 * @return the Gym Session ID of the GymSession object
 	 */
 	public int getGymSessionID() {
 		return gymSessionID;
 	}
+	/**
+	 * Setter method for the instance variable gymSessionID
+	 */
 	public void setGymSessionID() {
 		gymSessionID = gymSessionIDCounter++;
 	}
+	/**
+	 * Getter method for the instance variable gymSessionIDCounter
+	 * @return the Gym Session ID Counter of the GymSession object
+	 */
 	public String getName() {
 		return name;
 	}
+	/**
+	 * Setter method for the instance variable gymSessionIDCounter
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}
+	/**
+	 * Getter method for the instance variable rate
+	 * @return the Rate of the GymSession object
+	 */
 	public double getRate() {
 		return rate;
 	}
+	/**
+	 * Setter method for the instance variable rate
+	 */
 	public void setRate(double rate) {
 		this.rate = rate;
 	}

@@ -54,80 +54,126 @@ public class Payment {
 		this.time = time;
 		customerID = customer.getCustomerID();
 	}
-
+	/**
+	 * Getter method for the instance variable paymentID
+	 * @return the Payment ID of the Payment object
+	 */
 	public int getPaymentID() {
 		return paymentID;
 	}
-
+	/**
+	 * Setter method for the instance variable paymentID
+	 */
 	public void setPaymentID() {
 		paymentID = paymentIDCounter++;
 	}
-
+	/**
+	 * Getter method for the instance variable paymentIDCounter
+	 * @return the Payment ID Counter of the Payment object
+	 */
 	public int getCardNumber() {
 		return cardNumber;
 	}
-
+	/**
+	 * Setter method for the instance variable paymentIDCounter
+	 */
 	public void setCardNumber(int cardNumber) {
 		this.cardNumber = cardNumber;
 	}
-
+	/**
+	 * Getter method for the instance variable cardCVV
+	 * @return the Card CVV of the Payment object
+	 */
 	public int getCardCVV() {
 		return cardCVV;
 	}
-
+	/**
+	 * Setter method for the instance variable cardCVV
+	 */
 	public void setCardCVV(int cardCVV) {
 		this.cardCVV = cardCVV;
 	}
-
+	/**
+	 * Getter method for the instance variable cardExpiryDate
+	 * @return the Card Expiry Date of the Payment object
+	 */
 	public Date getCardExpiryDate() {
 		return cardExpiryDate;
 	}
-
+	/**
+	 * Setter method for the instance variable cardExpiryDate
+	 */
 	public void setCardExpiryDate(Date cardExpiryDate) {
 		this.cardExpiryDate = cardExpiryDate;
 	}
-
+	/**
+	 * Getter method for the instance variable cardHolderName
+	 * @return the Card Holder Name of the Payment object
+	 */
 	public String getCardHolderName() {
 		return cardHolderName;
 	}
-
+	/**
+	 * Setter method for the instance variable cardHolderName
+	 */
 	public void setCardHolderName(String cardHolderName) {
 		this.cardHolderName = cardHolderName;
 	}
-
+	/**
+	 * Getter method for the instance variable amount
+	 * @return the Amount of the Payment object
+	 */
 	public double getAmount() {
 		return amount;
 	}
-
+	/**
+	 * Setter method for the instance variable amount
+	 */
 	public void setAmount(double amount) {
 		this.amount = amount;
 	}
-
+	/**
+	 * Getter method for the instance variable date
+	 * @return the Date of the Payment object
+	 */
 	public Date getDate() {
 		return date;
 	}
-
+	/**
+	 * Setter method for the instance variable date
+	 */
 	public void setDate(Date date) {
 		this.date = date;
 	}
-
+	/**
+	 * Getter method for the instance variable time
+	 * @return the Time of the Payment object
+	 */
 	public Time getTime() {
 		return time;
 	}
-
+	/**
+	 * Setter method for the instance variable time
+	 */
 	public void setTime(Time time) {
 		this.time = time;
 	}
-
+	/**
+	 * Getter method for the instance variable customerID
+	 * @return the Customer ID of the Payment object
+	 */
 	public Customer getCustomer() {
 		return customer;
 	}
-
+	/**
+	 * Setter method for the instance variable customerID
+	 * @param customer an object of the type Customer
+	 */
 	public void setCustomer(Customer customer) {
 		this.customer = customer;
 	}
 	/**
-	 * Method to add payment details to the database
+	 * CRUD method to add payment details to the database
 	 */
 	public void addPayment() {
 		Connection connection = null;
@@ -161,7 +207,7 @@ public class Payment {
 	}
 
 	/**
-	 * Method to update payment details in the database
+	 * CRUD method to retrieve payment details from the database
 	 */
 
 	public void updatePayment(int paymentID) {
@@ -204,7 +250,7 @@ public class Payment {
 		}
 	}
 	/**
-	 * Method to delete payment details from the database
+	 * CRUD method to delete payment details from the database
 	 */
 	public void deletePayment() {
 		Connection connection = null;
