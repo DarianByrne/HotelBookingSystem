@@ -4,6 +4,9 @@ import ie.hotelbooking.model.Database;
 
 import java.sql.*;
 
+/**
+ * Customer class represents a customer in the hotel booking system.
+ */
 public class Customer {
 	private int customerID;
 	private static int customerIDCounter = 0;
@@ -13,10 +16,21 @@ public class Customer {
 	private Date dateOfBirth;
 	private String address;
 
+	/**
+	 * Default constructor
+	 */
 	public Customer() {
 		setCustomerID();
 	}
 
+	/**
+	 * Constructor with parameters
+	 * @param name
+	 * @param phoneNumber
+	 * @param email
+	 * @param dateOfBirth
+	 * @param address
+	 */
 	public Customer(String name, String phoneNumber, String email, Date dateOfBirth, String address) {
 		setCustomerID();
 		this.name = name;
@@ -72,6 +86,11 @@ public class Customer {
 		this.address = address;
 	}
 
+	/**
+	 * Method to add customer details
+	 * @return String
+	 */
+
 	public void addCustomer() {
 		Connection connection = null;
 		PreparedStatement preparedStatement = null;
@@ -99,6 +118,10 @@ public class Customer {
 		}
 	}
 
+	/**
+	 * Method to update customer details
+	 * @return String
+	 */
 	public void updateCustomer() {
 		Connection connection = null;
 		PreparedStatement preparedStatement = null;
@@ -126,7 +149,10 @@ public class Customer {
 			}
 		}
 	}
-
+	/**
+	 * Method to delete customer details
+	 * @return String
+	 */
 	public void deleteCustomer()
 	{
 		Connection connection = null;

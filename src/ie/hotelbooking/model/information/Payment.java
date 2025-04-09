@@ -5,6 +5,11 @@ import ie.hotelbooking.model.customer.*;
 
 import java.sql.*;
 
+/**
+ * Payment class represents a payment made by a customer.
+ * It contains information about the payment such as card details, amount, date, and time.
+ * It also provides methods to add, update, and delete payment records in the database.
+ */
 public class Payment {
 	private int paymentID;
 	private static int paymentIDCounter = 0;
@@ -18,9 +23,24 @@ public class Payment {
 	private Time time;
 	private Customer customer;
 
+	/**
+	 * Default constructor
+	 */
 	public Payment() {
 		setPaymentID();
 	}
+
+	/**
+	 * Constructor with parameters
+	 * @param cardNumber
+	 * @param cardCVV
+	 * @param cardExpiryDate
+	 * @param cardHolderName
+	 * @param amount
+	 * @param date
+	 * @param time
+	 * @param customer
+	 */
 
 	public Payment(int cardNumber, int cardCVV, Date cardExpiryDate, String cardHolderName, double amount, Date date, Time time, Customer customer) {
 		setPaymentID();
@@ -106,7 +126,9 @@ public class Payment {
 	public void setCustomer(Customer customer) {
 		this.customer = customer;
 	}
-
+	/**
+	 * Method to add payment details to the database
+	 */
 	public void addPayment() {
 		Connection connection = null;
 		PreparedStatement preparedStatement = null;
@@ -138,7 +160,9 @@ public class Payment {
 		}
 	}
 
-
+	/**
+	 * Method to update payment details in the database
+	 */
 
 	public void updatePayment(int paymentID) {
 		Connection connection = null;
@@ -179,7 +203,9 @@ public class Payment {
 			}
 		}
 	}
-
+	/**
+	 * Method to delete payment details from the database
+	 */
 	public void deletePayment() {
 		Connection connection = null;
 		PreparedStatement preparedStatement = null;
