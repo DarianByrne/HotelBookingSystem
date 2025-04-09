@@ -4,6 +4,9 @@ import javax.swing.*;
 import java.awt.*;
 import static ie.hotelbooking.Main.changeScreen;
 
+/**
+ * the main menu of the program
+ */
 public class MainMenu extends JPanel {
 	private JButton browseRoomsButton;
 	private JButton bookRoomButton;
@@ -18,6 +21,9 @@ public class MainMenu extends JPanel {
 	private JButton cancelPassButton;
 	private JButton updateCustomerButton;
 
+	/**
+	 * generates the main menu panel
+	 */
 	public MainMenu() {
 		setLayout(new GridLayout(0, 1));
 
@@ -60,6 +66,9 @@ public class MainMenu extends JPanel {
 		updateCustomerButton.addActionListener(e -> changeScreen(new UpdateCustomer()));
 	}
 
+	/**
+	 * small method that displays a message to show that a feature is under construction
+	 */
 	private void underConstruction() {
 		JOptionPane.showMessageDialog(ie.hotelbooking.Main.frame, "This screen is under construction", "Under Construction", JOptionPane.PLAIN_MESSAGE);
 	}

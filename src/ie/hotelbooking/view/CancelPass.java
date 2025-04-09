@@ -2,6 +2,9 @@ package ie.hotelbooking.view;
 
 import javax.swing.*;
 
+/**
+ * the cancel pass panel
+ */
 public class CancelPass extends JPanel {
 	private final JLabel label1;
 	private final JComboBox<String> comboBox;
@@ -9,6 +12,9 @@ public class CancelPass extends JPanel {
 	private final JButton cancelButton;
 	private final JLabel label3;
 
+	/**
+	 * generates the cancel pass panel
+	 */
 	public CancelPass() {
 		label1 = new JLabel("Cancel Pass");
 		add(label1);

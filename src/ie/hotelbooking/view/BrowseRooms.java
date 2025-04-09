@@ -5,12 +5,18 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ItemEvent;
 import static ie.hotelbooking.Main.changeScreen;
 
+/**
+ * the browse rooms panel
+ */
 public class BrowseRooms extends JPanel {
 	private final JLabel label1;
 	private final JComboBox<String> roomTypeComboBox;
 	private final JLabel label2;
 	private final JButton viewAvailabilityButton;
 
+	/**
+	 * generates the browse rooms panel
+	 */
 	public BrowseRooms() {
 		label1 = new JLabel("Select a room type");
 		add(label1);

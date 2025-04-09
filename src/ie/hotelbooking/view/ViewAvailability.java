@@ -12,11 +12,18 @@ import java.sql.SQLException;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
+/**
+ * the view availability panel
+ */
 public class ViewAvailability extends JPanel {
 	private final JLabel label1;
 	private final DatePicker datePicker;
 	private final JLabel label2;
 
+	/**
+	 * generates the view availability panel with a given type
+	 * @param type the type of availability to view
+	 */
 	public ViewAvailability(String type) {
 		label1 = new JLabel("View " + type + " Availability");
 		add(label1);
@@ -29,16 +36,29 @@ public class ViewAvailability extends JPanel {
 		add(label2);
 	}
 
+	/**
+	 * generates a default view availability panel
+	 */
 	public ViewAvailability() {
 		this("");
 	}
 
+	/**
+	 * handles when the date changes in the date picker
+	 * @param e the event
+	 */
 	public void dateChanged(DateChangeEvent e) {
 		if (e.getSource() == datePicker) {
 			label2.setText(datePicker.getDate() + " selected");
 		}
 	}
-	public boolean dateAvailable() {
+
+	/**
+	 * queries if the date is available
+	 * @return if the date is available
+	 * @throws SQLException
+	 */
+	public boolean dateAvailable() throws SQLException {
 		Connection con = null;
 		PreparedStatement ps = null;
 		ResultSet rs = null;

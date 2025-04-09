@@ -7,11 +7,18 @@ import ie.hotelbooking.view.MainMenu;
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * the main entry point to the program
+ */
 public class Main {
 	public static JFrame frame;
 	private static JPanel mainMenuPanel;
 	private static JRootPane rootPane;
 
+	/**
+	 * the entry point
+	 * @param args command line arguments (none used)
+	 */
 	public static void main(String[] args) {
 		try {
 			UIManager.setLookAndFeel(new FlatMacDarkLaf());
@@ -84,6 +91,10 @@ public class Main {
 //		booking.addBooking();
 	}
 
+	/**
+	 * changes the screen being displayed beside the main menu
+	 * @param panel the panel that will be changed to
+	 */
 	public static void changeScreen(JPanel panel) {
 //		mainMenuPanel.setLayout(new GridLayout(0, 1));
 		rootPane.setContentPane(panel);

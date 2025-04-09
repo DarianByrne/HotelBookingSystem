@@ -10,6 +10,9 @@ import ie.hotelbooking.model.booking.*;
 
 import static ie.hotelbooking.Main.changeScreen;
 
+/**
+ * the book room panel
+ */
 public class BookRoom extends JPanel {
 	private final JLabel label1;
 	private final JComboBox<String> roomTypeComboBox;
@@ -22,6 +25,9 @@ public class BookRoom extends JPanel {
 	private DatePicker arrivalDatePicker;
 	private DatePicker departureDatePicker;
 
+	/**
+	 * generates the book room panel
+	 */
 	public BookRoom() {
 		arrivalDateLabel = new JLabel("Arrival date: ");
 		add(arrivalDateLabel);

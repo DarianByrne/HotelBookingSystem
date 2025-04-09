@@ -2,6 +2,9 @@ package ie.hotelbooking.view;
 
 import javax.swing.*;
 
+/**
+ * the update customer panel
+ */
 public class UpdateCustomer extends JPanel {
 	private final JLabel label1;
 	private final JComboBox<String> comboBox;
@@ -10,6 +13,9 @@ public class UpdateCustomer extends JPanel {
 	private final JTextField textField1;
 	private final JButton button1;
 
+	/**
+	 * generates the update customer panel
+	 */
 	public UpdateCustomer() {
 		label1 = new JLabel("Update Customer");
 		add(label1);
