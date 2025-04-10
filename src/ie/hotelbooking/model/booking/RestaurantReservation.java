@@ -8,6 +8,9 @@ import java.sql.SQLException;
 import java.sql.Date;
 import java.sql.Time;
 
+/**
+ * RestaurantReservation class that extends from the superclass Booking
+ */
 public class RestaurantReservation extends Booking {
 	private int reservationID;
 	private Date arrivalDate;
@@ -16,10 +19,21 @@ public class RestaurantReservation extends Booking {
 	private int tableNumber;
 	private int numberOfGuests;
 
+	/**
+	 * RestaurantReservation constructor method that instantiates a new RestaurantReservation object without arguments
+	 */
 	public RestaurantReservation() {
 		super();
 	}
 
+	/**
+	 * RestaurantReservation constructor method that instantiates a new RestaurantReservation object with arguments
+	 * passed as parameters
+	 * @param table a table object of the type Table
+	 * @param numberOfGuests a numberOfGuests variable of the type int
+	 * @param arrivalDate an arrivalDate object of the type Date
+	 * @param arrivalTime an arrivalTime object of the type Time
+	 */
 	public RestaurantReservation(Table table, int numberOfGuests, Date arrivalDate, Time arrivalTime) {
 		super();
 		setReservationID();
@@ -30,25 +44,57 @@ public class RestaurantReservation extends Booking {
 		this.tableNumber = table.getTableNumber();
 	}
 
+	/**
+	 * Getter method for the instance variable reservationID
+	 * @return the integer variable reservationID
+	 */
 	public int getReservationID() {
 		return reservationID;
 	}
+
+	/**
+	 * Setter method for setting the instance variable reservationID
+	 */
 	public void setReservationID() {
 		this.reservationID = this.getBookingID();
 	}
+
+	/**
+	 * Getter method for the instance variable table
+	 * @return an object of the type Table
+	 */
 	public Table getTable() {
 		return table;
 	}
+
+	/**
+	 * Setter method for setting the instance variable table
+	 * @param table an object of the type Table
+	 */
 	public void setTable(Table table) {
 		this.table = table;
 	}
+
+	/**
+	 * Getter method for the instance variable numberOfGuests
+	 * @return the numberOfGuests variable of the type int
+	 */
 	public int getNumberOfGuests() {
 		return numberOfGuests;
 	}
+
+	/**
+	 * Setter method for setting the instance variable numberOfGuests
+	 * @param numberOfGuests a variable of the type int
+	 */
 	public void setNumberOfGuests(int numberOfGuests) {
 		this.numberOfGuests = numberOfGuests;
 	}
 
+	/**
+	 * CRUD method for inserting a restaurant reservation into the restaurant_reservation table in
+	 * the database
+	 */
 	public void addReservation() {
 		this.addBooking();
 		Connection con = null;
@@ -76,6 +122,10 @@ public class RestaurantReservation extends Booking {
 		}
 	}
 
+	/**
+	 * CRUD method for updating a restaurant reservation row in the restaurant_reservation table in
+	 * the database
+	 */
 	public void updateReservation() {
 		this.updateBooking();
 		Connection con = null;
@@ -103,6 +153,11 @@ public class RestaurantReservation extends Booking {
 			}
 		}
 	}
+
+	/**
+	 * CRUD method for deleting a restaurant reservation row in the restaurant_reservation table in
+	 * the database
+	 */
 	public void deleteReservation() {
 		this.deleteBooking();
 		Connection con = null;
